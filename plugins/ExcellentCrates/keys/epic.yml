@@ -1,0 +1,9 @@
+Name: '&dEpic Key'
+Virtual: false
+ItemData:
+  Type: VANILLA
+  Tag:
+    Value: '{components:{"minecraft:custom_model_data":{floats:[3004.0f]},"minecraft:custom_name":''{"bold":false,"extra":[{"bold":false,"extra":[{"bold":false,"extra":[{"bold":true,"color":"light_purple","text":"Epic Key"}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}'',"minecraft:damage":0,"minecraft:enchantments":{levels:{"minecraft:unbreaking":1}},"minecraft:lore":[''{"bold":false,"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}'',''{"bold":false,"extra":[{"bold":false,"extra":[{"color":"gray","text":"Purchase
+      more crate keys"}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}'',''{"bold":false,"extra":[{"bold":false,"extra":[{"color":"gray","text":"with "},{"bold":false,"extra":[{"color":"light_purple","text":"/coinshop"}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}'',''{"bold":false,"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}'',''{"bold":false,"extra":[{"bold":false,"extra":[{"color":"yellow","text":"➥
+      Use at Warp Crates!"}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}'']},count:1,id:"minecraft:paper"}'
+    DataVersion: 4189

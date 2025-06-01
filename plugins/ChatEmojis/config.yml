@@ -1,0 +1,78 @@
+emotes:
+  basic:
+    happy:
+      emoticon: ':happy:'
+      emoji: '&f'
+    smiling:
+      emoticon: ':smiling:'
+      emoji: '&f'
+    wink:
+      emoticon: ':wink:'
+      emoji: '&f'
+    tongue:
+      emoticon: ':tongue:'
+      emoji: '&f'
+    hearteyes:
+      emoticon: ':hearteyes:'
+      emoji: '&f'
+    love:
+      emoticon: ':love:'
+      emoji: '&f'
+    begging:
+      emoticon: ':begging:'
+      emoji: '&f'
+    sad:
+      emoticon: ':sad:'
+      emoji: '&f'
+    joy:
+      emoticon: ':joy:'
+      emoji: '&f'
+    crying:
+      emoticon: ':crying:'
+      emoji: '&f'
+    rage:
+      emoticon: ':rage:'
+      emoji: '&f'
+    sweat:
+      emoticon: ':sweat:'
+      emoji: '&f'
+    cool:
+      emoticon: ':cool:'
+      emoji: '&f'
+    grimacing:
+      emoticon: ':grimacing:'
+      emoji: '&f'
+    upsidedown:
+      emoticon: ':upsidedown:'
+      emoji: '&f'
+    clown:
+      emoticon: ':clown:'
+      emoji: '&f'
+    skull:
+      emoticon: ':skull:'
+      emoji: '&f'
+    heart:
+      emoticon: ':heart:'
+      emoji: '&f'
+    fire:
+      emoticon: ':fire:'
+      emoji: '&f'
+    thumbup:
+      emoticon: ':thumbup:'
+      emoji: '&f'
+    thumbdown:
+      emoticon: ':thumbdown:'
+      emoji: '&f'
+    rainbow:
+      emoticon: ':rainbow:'
+      emoji: '&f'
+    eyes:
+      emoticon: ':eyes:'
+      emoji: '&f'
+settings:
+  use:
+    books: false
+    signs: false
+    anvils: true
+  max-emojis-per-message: -1
+  max-duplicate-emojis: -1

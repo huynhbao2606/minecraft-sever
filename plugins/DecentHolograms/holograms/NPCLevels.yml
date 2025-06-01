@@ -1,0 +1,16 @@
+location: spawn:22.500:102.9:-33.5
+enabled: true
+display-range: 100
+update-range: 100
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: ''
+    height: 0.3
+  - content: '&c&lLevels&f'
+    height: 0.3
+  - content: '&7(/levels)'
+    height: 0.5
+  actions: {}

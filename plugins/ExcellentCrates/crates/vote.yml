@@ -1,0 +1,659 @@
+Name: Vote Crate
+Permission_Required: false
+Attached_Citizens: ''
+Opening:
+  Cooldown: 0
+Key:
+  Ids:
+  - vote
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+Block:
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: false
+    Template: vote
+    Y_Offset: 0.0
+  Effect:
+    Model: NONE
+    Particle:
+      Name: GLOW
+  Positions:
+  - 71,113,-65,spawn
+Rewards:
+  List:
+    oaklog:
+      Name: '&e&l64x &fOak Log'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 25.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"64x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Oak Log"}],"text":""}''},count:64,id:"minecraft:oak_log"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:64,id:"minecraft:oak_log"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    coal:
+      Name: '&e&l48x &fCoal'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 25.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"48x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Coal"}],"text":""}''},count:48,id:"minecraft:coal"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:48,id:"minecraft:coal"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    ironingot:
+      Name: '&e&l24x &fIron Ingot'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 25.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"24x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Iron Ingot"}],"text":""}''},count:24,id:"minecraft:iron_ingot"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:24,id:"minecraft:iron_ingot"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    goldingot:
+      Name: '&e&l12x &fGold Ingot'
+      Chance: 20.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 20.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"12x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Gold Ingot"}],"text":""}''},count:12,id:"minecraft:gold_ingot"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:12,id:"minecraft:gold_ingot"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    emerald:
+      Name: '&e&l6x &fEmerald'
+      Chance: 20.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 20.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"6x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Emerald"}],"text":""}''},count:6,id:"minecraft:emerald"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:6,id:"minecraft:emerald"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    diamond:
+      Name: '&e&l4x &fDiamond'
+      Chance: 15.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 15.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"4x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Diamond"}],"text":""}''},count:4,id:"minecraft:diamond"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:4,id:"minecraft:diamond"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    netherite_ingot:
+      Name: '&e&l1x &fNetherite Ingot'
+      Chance: 15.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 15.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Netherite Ingot"}],"text":""}''},count:1,id:"minecraft:netherite_ingot"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:netherite_ingot"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    $2,000_in-game_cash:
+      Name: '&a&l$10,000 &fIn-Game Cash'
+      Chance: 15.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - eco give %player_name% 10000
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 15.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3008.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"green","italic":false,"obfuscated":false,"strikethrough":false,"text":"$10,000 ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"In-Game Cash"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    $1,000_in-game_cash:
+      Name: '&a&l$5,000 &fIn-Game Cash'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - eco give %player_name% 5000
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 25.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3008.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"green","italic":false,"obfuscated":false,"strikethrough":false,"text":"$5,000 ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"In-Game Cash"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    coins:
+      Name: '&e&l50 &f&lCoins'
+      Chance: 15.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - coins give %player_name% 50
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 15.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3006.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"50 ","underlined":false},{"bold":true,"color":"white","italic":false,"text":"Coins"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    coins25:
+      Name: '&e&l25 &f&lCoins'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - coins give %player_name% 25
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 25.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3006.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"25 ","underlined":false},{"bold":true,"color":"white","italic":false,"text":"Coins"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    500_exp:
+      Name: '&e&l500 EXP'
+      Chance: 15.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - '[CONSOLE] experience add %player_name% 500'
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{count:1,id:"minecraft:experience_bottle"}'
+          DataVersion: 4189
+      Type: COMMAND
+    300_exp:
+      Name: '&e&l300 EXP'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - '[CONSOLE] experience add %player_name% 300'
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{count:1,id:"minecraft:experience_bottle"}'
+          DataVersion: 4189
+      Type: COMMAND
+    research2:
+      Name: '&6&l2 &fResearch Point'
+      Chance: 15.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - factoriesresearch give %player_name% 2
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 15.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3007.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"gold","italic":false,"obfuscated":false,"strikethrough":false,"text":"2 ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Research Point"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    research1:
+      Name: '&6&l1 &fResearch Point'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - factoriesresearch give %player_name% 1
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 25.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3007.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"gold","italic":false,"obfuscated":false,"strikethrough":false,"text":"1 ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Research Point"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    randomtoolskin:
+      Name: '&3⛏ &b&lRandom Toolskin &3⛏'
+      Chance: 15.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 15.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[50001.0f]},"minecraft:custom_name":''{"extra":[{"bold":false,"color":"dark_aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"⛏ ","underlined":false},{"bold":true,"color":"aqua","italic":false,"text":"Random Toolskin "},{"bold":false,"color":"dark_aqua","italic":false,"text":"⛏"}],"text":""}''},count:1,id:"minecraft:diamond_pickaxe"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_data":{voucher:"Random_Toolskin"},"minecraft:custom_name":''{"extra":[{"bold":false,"color":"dark_aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"⛏ ","underlined":false},{"bold":true,"color":"aqua","italic":false,"text":"Random Toolskin "},{"bold":false,"color":"dark_aqua","italic":false,"text":"⛏"}],"text":""}'',"minecraft:lore":[''{"extra":[{"bold":false,"color":"dark_gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Toolskin
+              Voucher","underlined":false}],"text":""}'',''""'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Claim this voucher to","underlined":false}],"text":""}'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"receive a random toolskin!","underlined":false}],"text":""}'',''""'',''{"extra":[{"bold":false,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"➥ Left-Click
+              to claim","underlined":false}],"text":""}'']},count:1,id:"minecraft:book"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    shulker_box:
+      Name: '&e&l1x &fShulker Box'
+      Chance: 15.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 15.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Shulker Box"}],"text":""}''},count:1,id:"minecraft:shulker_box"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:shulker_box"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    trident:
+      Name: '&e&l1x &fTrident'
+      Chance: 7.5
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 7.5
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Trident"}],"text":""}''},count:1,id:"minecraft:trident"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:trident"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    villageregg:
+      Name: '&e&l1x &fVillager Spawn Egg'
+      Chance: 10.0
+      Rarity: common
+      Broadcast: false
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 10.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Villager Spawn Egg"}],"text":""}''},count:1,id:"minecraft:villager_spawn_egg"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:villager_spawn_egg"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    epic_key:
+      Name: '&d&l1x &fEpic Key'
+      Chance: 5.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - excellentcrates:crate key give %player_name% epic 1
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 5.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3004.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"light_purple","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Epic Key"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    rare_key:
+      Name: '&b&l1x &fRare Key'
+      Chance: 10.0
+      Rarity: common
+      Broadcast: false
+      Commands:
+      - excellentcrates:crate key give %player_name% rare 1
+      Ignored_For_Permissions: []
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Weight: 10.0
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3003.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Rare Key"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+Milestones:
+  Repeatable: false
+_dataver: 600
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:orange_shulker_box"}'
+    DataVersion: 4189
+Preview:
+  Enabled: true
+  Id: vote
+Animation:
+  Enabled: true
+  Id: enclosing

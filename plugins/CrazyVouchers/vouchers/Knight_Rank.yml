@@ -1,0 +1,23 @@
+voucher:
+  item: BOOK
+  name: '&7✦ &6&lKnight Rank &7✦'
+  lore:
+  - '&8Rank Voucher'
+  - ''
+  - '&7Claim this voucher to'
+  - '&7receive the knight rank!'
+  - ''
+  - '&e➥ Left-Click to claim'
+  player: ''
+  glowing: true
+  options:
+    message: '&8[&6&l!&8] &6&lVoucher &8→ &aYou have just claimed rank knight!'
+    permission:
+      blacklist-permission:
+        toggle: true
+        message: '&8[&6&l!&8] &6&lVoucher &8→ &cYou already have this rank
+          and cant use this voucher.'
+        permissions:
+        - group.knight
+  commands:
+  - lp user {player} parent settrack rank knight

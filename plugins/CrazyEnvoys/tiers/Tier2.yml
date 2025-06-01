@@ -1,0 +1,281 @@
+Settings:
+  Claim-Permission: false
+  Claim-Permission-Name: 'lucky.envoy.use'
+  Spawn-Chance: 10
+  Use-Chance: true
+  Placed-Block: 'CHEST'
+  Bulk-Prizes:
+    Toggle: false
+    Random: true
+    Max-Bulk: 3
+  Hologram-Toggle: true
+  Hologram-Height: 1.8
+  Hologram:
+    - '&c&l[&6&l!&c&l] Supply Crate'    
+    - '&fRarity: &f'
+  Firework-Toggle: true
+  Firework-Colors:
+    - 'Orange'
+    - 'Red'
+    - 'Yellow'
+    - 'White'
+  Signal-Flare:
+    Toggle: false
+    Time: '25s'
+    Colors:
+    - 'Orange'
+    - 'Red'
+    - 'Yellow'
+    - 'White'
+
+
+Prizes:
+
+  '3':
+    Chance: 3
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_AXE, Amount:1'
+  '4':
+    Chance: 3
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_SHOVEL, Amount:1'
+
+  '5':
+    Chance: 3
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_HOE, Amount:1'
+
+
+
+
+
+
+
+
+
+  '9':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:IRON_INGOT, Amount:32'
+  '10':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:COPPER_INGOT, Amount:24'
+  '11':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:GOLD_INGOT, Amount:16'
+  '12':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:DIAMOND, Amount:6'
+  '13':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:EMERALD, Amount:3'
+  '14':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_INGOT, Amount:2'
+
+
+
+
+
+
+
+
+
+
+
+
+  '18':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 mending:1'
+
+  '19':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 aqua_affinity:1'
+
+  '20':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 blast_protection:3'
+
+  '21':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 flame:1'
+
+  '22':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 infinity:1'
+
+  '23':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 power:3'
+
+  '24':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 respiration:2'
+
+  '25':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 smite:3'
+
+  '26':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 thorns:2'
+
+  '27':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 punch:2'
+
+  '28':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 luck_of_the_sea:2'
+
+  '29':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 knockback:1'
+
+  '30':
+    Chance: 3
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 frost_walker:2'
+
+
+
+
+
+
+
+
+
+
+
+  '31':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 5000'
+  '32':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 6000'
+  '33':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 7000'
+  '34':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 8000'
+  '35':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 10000'
+
+
+  '36':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 40'
+  '37':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 50'
+  '38':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 60'
+  '39':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 70'
+
+  '40':
+    Chance: 10
+    Drop-Items: true
+
+    Items:
+      - 'Item:HOPPER, Amount:1'
+  '41':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:TOTEM_OF_UNDYING, Amount:1'
+  '42':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:FIREWORK_ROCKET, Amount:32'
+  '43':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:SHULKER_SHELL, Amount:2'
+
+
+  '50':
+    Chance: 5
+
+    Commands:
+      - 'excellentcrates:crate key give %Player% common 1'
+  '51':
+    Chance: 2
+
+    Commands:
+      - 'excellentcrates:crate key give %Player% rare 1'

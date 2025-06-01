@@ -1,0 +1,20 @@
+name: Shuxki
+categories:
+  features:
+    completed: false
+    discoveries:
+    - rewards;01/06/2025;0
+    - tags;01/06/2025;0
+    - dailyquests;01/06/2025;0
+    - jobs;01/06/2025;0
+    - quests;01/06/2025;0
+    - rtp;01/06/2025;0
+  regions:
+    completed: false
+    discoveries:
+    - afk;01/06/2025;0
+    - crates;01/06/2025;0
+  objectives:
+    completed: false
+    discoveries:
+    - teleport_to_nether;01/06/2025;0

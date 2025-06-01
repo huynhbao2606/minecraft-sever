@@ -1,0 +1,643 @@
+Name: Common Crate
+Permission_Required: false
+Attached_Citizens: ''
+Opening:
+  Cooldown: 0
+Key:
+  Ids:
+  - common
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+Block:
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: false
+    Template: common
+    Y_Offset: 0.0
+  Effect:
+    Model: NONE
+    Particle:
+      Name: GLOW
+  Positions:
+  - 60,113,-76,spawn
+Rewards:
+  List:
+    common_sword:
+      Name: '&a&lCommon Sword'
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"green","italic":false,"obfuscated":false,"strikethrough":false,"text":"Common Sword","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:sharpness":4,"minecraft:unbreaking":3}},"minecraft:lore":[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"text":""}'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Rarity:
+            ","underlined":false},{"color":"white","italic":false,"text":""}],"text":""}'']},count:1,id:"minecraft:diamond_sword"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"green","italic":false,"obfuscated":false,"strikethrough":false,"text":"Common Sword","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:sharpness":4,"minecraft:unbreaking":3}},"minecraft:lore":[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"text":""}'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Rarity:
+              ","underlined":false},{"color":"white","italic":false,"text":""}],"text":""}'']},count:1,id:"minecraft:diamond_sword"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    common_pickaxe:
+      Name: '&a&lCommon Pickaxe'
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"green","italic":false,"obfuscated":false,"strikethrough":false,"text":"Common Pickaxe","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:efficiency":4,"minecraft:unbreaking":3}},"minecraft:lore":[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"text":""}'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Rarity:
+            ","underlined":false},{"color":"white","italic":false,"text":""}],"text":""}'']},count:1,id:"minecraft:diamond_pickaxe"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"green","italic":false,"obfuscated":false,"strikethrough":false,"text":"Common Pickaxe","underlined":false}],"text":""}'',"minecraft:enchantments":{levels:{"minecraft:efficiency":4,"minecraft:unbreaking":3}},"minecraft:lore":[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"text":""}'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Rarity:
+              ","underlined":false},{"color":"white","italic":false,"text":""}],"text":""}'']},count:1,id:"minecraft:diamond_pickaxe"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    coal:
+      Name: '&e&l64x &fCoal'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"64x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Coal"}],"text":""}''},count:64,id:"minecraft:coal"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:64,id:"minecraft:coal"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    ironingot:
+      Name: '&e&l32x &fIron Ingot'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"32x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Iron Ingot"}],"text":""}''},count:32,id:"minecraft:iron_ingot"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:32,id:"minecraft:iron_ingot"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    goldingot:
+      Name: '&e&l16x &fGold Ingot'
+      Weight: 20.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"16x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Gold Ingot"}],"text":""}''},count:16,id:"minecraft:gold_ingot"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:16,id:"minecraft:gold_ingot"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    emerald:
+      Name: '&e&l8x &fEmerald'
+      Weight: 20.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"8x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Emerald"}],"text":""}''},count:8,id:"minecraft:emerald"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:8,id:"minecraft:emerald"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    diamond:
+      Name: '&e&l6x &fDiamond'
+      Weight: 15.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"6x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Diamond"}],"text":""}''},count:6,id:"minecraft:diamond"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:6,id:"minecraft:diamond"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    netherite_ingot:
+      Name: '&e&l2x &fNetherite Ingot'
+      Weight: 15.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"2x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Netherite Ingot"}],"text":""}''},count:2,id:"minecraft:netherite_ingot"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:2,id:"minecraft:netherite_ingot"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    $2,000_in-game_cash:
+      Name: '&a&l$25,000 &fIn-Game Cash'
+      Weight: 15.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - eco give %player_name% 25000
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3008.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"green","italic":false,"obfuscated":false,"strikethrough":false,"text":"$25,000 ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"In-Game Cash"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    $1,000_in-game_cash:
+      Name: '&a&l$10,000 &fIn-Game Cash'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - eco give %player_name% 5000
+      - eco give %player_name% 10000
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3008.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"green","italic":false,"obfuscated":false,"strikethrough":false,"text":"$10,000 ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"In-Game Cash"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    coins25:
+      Name: '&e&l80 &f&lCoins'
+      Weight: 15.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - coins give %player_name% 80
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3006.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"80 ","underlined":false},{"bold":true,"color":"white","italic":false,"text":"Coins"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    coins:
+      Name: '&e&l50 &f&lCoins'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - coins give %player_name% 50
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3006.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"50 ","underlined":false},{"bold":true,"color":"white","italic":false,"text":"Coins"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    300_exp:
+      Name: '&e&l750 EXP'
+      Weight: 15.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - experience add %player_name% 750
+      Ignored_For_Permissions: []
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"750 EXP","underlined":false}],"text":""}'',"minecraft:lore":[''{"extra":[{"bold":false,"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"text":""}'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"➠ Recieve 300 EXP","underlined":false}],"text":""}'']},count:1,id:"minecraft:experience_bottle"}'
+          DataVersion: 4189
+      Type: COMMAND
+    500_exp:
+      Name: '&e&l500 EXP'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - experience add %player_name% 500
+      Ignored_For_Permissions: []
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"500 EXP","underlined":false}],"text":""}'',"minecraft:lore":[''{"extra":[{"bold":false,"italic":false,"obfuscated":false,"strikethrough":false,"text":"","underlined":false}],"text":""}'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"➠ Recieve 500 EXP","underlined":false}],"text":""}'']},count:1,id:"minecraft:experience_bottle"}'
+          DataVersion: 4189
+      Type: COMMAND
+    research1:
+      Name: '&6&l3 &fResearch Point'
+      Weight: 15.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - factoriesresearch give %player_name% 3
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3007.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"gold","italic":false,"obfuscated":false,"strikethrough":false,"text":"3 ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Research Point"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    research2:
+      Name: '&6&l2 &fResearch Point'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - factoriesresearch give %player_name% 2
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3007.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"gold","italic":false,"obfuscated":false,"strikethrough":false,"text":"2 ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Research Point"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    randomtoolskin:
+      Name: '&3⛏ &b&lRandom Toolskin &3⛏'
+      Weight: 15.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[50001.0f]},"minecraft:custom_name":''{"extra":[{"bold":false,"color":"dark_aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"⛏ ","underlined":false},{"bold":true,"color":"aqua","italic":false,"text":"Random Toolskin "},{"bold":false,"color":"dark_aqua","italic":false,"text":"⛏"}],"text":""}''},count:1,id:"minecraft:diamond_pickaxe"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{components:{"minecraft:custom_data":{voucher:"Random_Toolskin"},"minecraft:custom_name":''{"extra":[{"bold":false,"color":"dark_aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"⛏ ","underlined":false},{"bold":true,"color":"aqua","italic":false,"text":"Random Toolskin "},{"bold":false,"color":"dark_aqua","italic":false,"text":"⛏"}],"text":""}'',"minecraft:lore":[''{"extra":[{"bold":false,"color":"dark_gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Toolskin
+              Voucher","underlined":false}],"text":""}'',''""'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Claim this voucher to","underlined":false}],"text":""}'',''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"receive a random toolskin!","underlined":false}],"text":""}'',''""'',''{"extra":[{"bold":false,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"➥ Left-Click
+              to claim","underlined":false}],"text":""}'']},count:1,id:"minecraft:book"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    shulker_box:
+      Name: '&e&l1x &fShulker Box'
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Shulker Box"}],"text":""}''},count:1,id:"minecraft:shulker_box"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:shulker_box"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    trident:
+      Name: '&e&l1x &fTrident'
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_name":''{"extra":[{"bold":true,"color":"yellow","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Trident"}],"text":""}''},count:1,id:"minecraft:trident"}'
+          DataVersion: 4189
+      Type: ITEM
+      ItemsData:
+        '0':
+          Type: VANILLA
+          Tag:
+            Value: '{count:1,id:"minecraft:trident"}'
+            DataVersion: 4189
+      Custom_Preview: false
+    rare_key:
+      Name: '&b&l1x &fRare Key'
+      Weight: 15.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - excellentcrates:crate key give %player_name% rare 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3003.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Rare Key"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+    epic_key:
+      Name: '&d&l1x &fEpic Key'
+      Weight: 7.5
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - excellentcrates:crate key give %player_name% epic 1
+      Ignored_For_Permissions: []
+      Placeholder_Apply: false
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{components:{"minecraft:custom_model_data":{floats:[3004.0f]},"minecraft:custom_name":''{"extra":[{"bold":true,"color":"light_purple","italic":false,"obfuscated":false,"strikethrough":false,"text":"1x ","underlined":false},{"bold":false,"color":"white","italic":false,"text":"Epic Key"}],"text":""}''},count:1,id:"minecraft:paper"}'
+          DataVersion: 4189
+      Type: COMMAND
+Milestones:
+  Repeatable: false
+_dataver: 600
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:lime_shulker_box"}'
+    DataVersion: 4189
+Preview:
+  Enabled: true
+  Id: common
+Animation:
+  Enabled: true
+  Id: enclosing

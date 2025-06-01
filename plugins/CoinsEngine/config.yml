@@ -1,0 +1,46 @@
+General:
+  # Here you can create custom amount shortcuts to use in commands.
+  # For example, with default settings you can use values like 1K (1000), 5KK or 5M (5 millions), 7KKK or 7B (7 billions).
+  # Also, this has addictive behavior, so using, for example, 2MM will result in 2 * (million * million)
+  Amount_Shortcuts:
+    thousand:
+      Literal: k
+      Multiplier: 1000.0
+    million:
+      Literal: m
+      Multiplier: 1000000.0
+    billion:
+      Literal: b
+      Multiplier: 1.0E9
+  # Sets whether to apply PlaceholderAPI placeholders for currency 'Format' setting.
+  # Allows you to use custom images from Oraxen or ItemsAdder, as well as any other player unrelated placeholders.
+  PlaceholderAPI_For_Currency_Format: true
+Economy:
+  Command_Shortcuts:
+    # Sets whether or not plugin will register shortcut versions of 'balance', 'pay' and 'top' commands for Vault-compatible currency.
+    # When this setting disabled, you will have to use, for example, '/money balance' command instead of just '/balance'.
+    Enabled: true
+Top:
+  # Sets how many entries will be displayed per page for currency top commands.
+  Entries_Per_Page: 10
+  # Sets how often (in seconds) currency top balances will be fetched & updated.
+  Update_Interval: 300
+Logs:
+  # Sets logs date format.
+  DateFormat: dd/MM/yyyy HH:mm:ss
+  Enabled:
+    # Sets whether or not all currency command-based balance operations will be logged to console.
+    Console: false
+    # Sets whether or not all currency command-based balance operations will be logged to a file.
+    File: true
+Currency:
+  Prefix:
+    # Controls whether or not currency messages will use custom prefix instead of the plugin's one.
+    Enabled: true
+    # Sets custom prefix format for currency messages.
+    # You can use 'Currency' placeholders: https://nightexpress.gitbook.io/coinsengine/utility/placeholders
+    Format: <lyellow><b>%currency_prefix%</b></lyellow><dgray> » </dgray><gray>
+  Command:
+    # When enabled, fallbacks to the balance command when no or invalid argument(s) were provided.
+    # Example: /coins => /coins balance
+    Default_To_Balance: true

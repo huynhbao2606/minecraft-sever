@@ -1,0 +1,23 @@
+voucher:
+  item: PAPER
+  name: '&7✦ &c&l/Fly Command &7✦'
+  lore:
+  - '&8Command Voucher'
+  - ''
+  - '&7Claim this voucher to'
+  - '&7receive the /fly command!'
+  - ''
+  - '&e➥ Left-Click to claim'
+  player: ''
+  glowing: true
+  options:
+    message: '&8[&6&l!&8] &6&lVoucher &8→ &aYou have just claimed /fly command!'
+    permission:
+      blacklist-permission:
+        toggle: true
+        message: '&8[&6&l!&8] &6&lVoucher &8→ &cYou already have this command
+          and cant use this voucher.'
+        permissions:
+        - essentials.fly
+  commands:
+  - lp user {player} permission set essentials.fly

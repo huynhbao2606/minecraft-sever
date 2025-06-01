@@ -1,0 +1,281 @@
+Settings:
+  Claim-Permission: false
+  Claim-Permission-Name: 'lucky.envoy.use'
+  Spawn-Chance: 3
+  Use-Chance: true
+  Placed-Block: 'ENDER_CHEST'
+  Bulk-Prizes:
+    Toggle: false
+    Random: true
+    Max-Bulk: 3
+  Hologram-Toggle: true
+  Hologram-Height: 1.8
+  Hologram:
+    - '&c&l[&6&l!&c&l] Supply Crate'    
+    - '&fRarity: &f'
+  Firework-Toggle: true
+  Firework-Colors:
+    - 'Orange'
+    - 'Red'
+    - 'Yellow'
+    - 'White'
+  Signal-Flare:
+    Toggle: false
+    Time: '25s'
+    Colors:
+    - 'Orange'
+    - 'Red'
+    - 'Yellow'
+    - 'White'
+
+
+Prizes:
+  '1':
+    Chance: 2
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_SWORD, Amount:1'
+  '2':
+    Chance: 2
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_PICKAXE, Amount:1'
+  '6':
+    Chance: 2
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_CHESTPLATE, Amount:1'
+  '7':
+    Chance: 2
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_LEGGINGS, Amount:1'
+
+
+  '12':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:DIAMOND, Amount:16'
+  '13':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:EMERALD, Amount:8'
+  '14':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHERITE_INGOT, Amount:4'
+
+
+
+
+
+
+
+
+
+
+
+  '19':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 efficiency:4'
+  '20':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 sharpness:4'
+  '22':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 thorns:3'
+  '23':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 looting:3'
+  '25':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 depth_strider:3'
+  '26':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 protection:4'
+  '27':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 fire_protection:4'
+  '28':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 fortune:2'
+  '60':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 feather_falling:3'
+  '61':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 power:4'
+  '62':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 unbreaking:3'
+  '63':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 lure:3'
+  '64':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 luck_of_the_sea:2'
+  '65':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 projectile_protection:4'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  '32':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 40000'
+  '33':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 50000'
+  '34':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 60000'
+  '35':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 70000'
+
+
+  '37':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 75'
+  '38':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 100'
+  '39':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 150'
+
+
+
+  '42':
+    Chance: 5
+    Drop-Items: true
+
+    Items:
+      - 'Item:ELYTRA, Amount:1'
+  '43':
+    Chance: 8
+    Drop-Items: true
+
+    Items:
+      - 'Item:TRIDENT, Amount:1'
+
+  '44':
+    Chance: 5
+    Drop-Items: true
+
+    Items:
+      - 'Item:BEACON, Amount:1'
+  '45':
+    Chance: 5
+    Drop-Items: true
+
+    Items:
+      - 'Item:NETHER_STAR, Amount:1'
+
+
+  '50':
+    Chance: 10
+
+    Commands:
+      - 'excellentcrates:crate key give %Player% common 1'
+  '51':
+    Chance: 5
+
+    Commands:
+      - 'excellentcrates:crate key give %Player% rare 1'
+  '52':
+    Chance: 2
+
+    Commands:
+      - 'excellentcrates:crate key give %Player% epic 1'

@@ -1,0 +1,166 @@
+Settings:
+  Claim-Permission: false
+  Claim-Permission-Name: 'lucky.envoy.use'
+  Spawn-Chance: 1
+  Use-Chance: true
+  Placed-Block: 'ENDER_CHEST'
+  Bulk-Prizes:
+    Toggle: false
+    Random: true
+    Max-Bulk: 3
+  Hologram-Toggle: true
+  Hologram-Height: 1.8
+  Hologram:
+    - '&c&l[&6&l!&c&l] Supply Crate'    
+    - '&fRarity: &f'
+  Firework-Toggle: true
+  Firework-Colors:
+    - 'Orange'
+    - 'Red'
+    - 'Yellow'
+    - 'White'
+  Signal-Flare:
+    Toggle: false
+    Time: '25s'
+    Colors:
+    - 'Orange'
+    - 'Red'
+    - 'Yellow'
+    - 'White'
+
+
+Prizes:
+  '19':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 efficiency:5'
+  '20':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 sharpness:5'
+  '22':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 thorns:3'
+  '23':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 looting:3'
+  '25':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 depth_strider:3'
+  '26':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 protection:5'
+  '27':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 fire_protection:4'
+  '28':
+    Chance: 2
+    Drop-Items: true
+    Commands:
+      - 'give %Player% enchanted_book 1 fortune:3'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  '33':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 75000'
+  '34':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 100000'
+  '35':
+    Chance: 10
+
+    Commands:
+      - 'eco give %Player% 150000'
+
+
+  '38':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 250'
+  '39':
+    Chance: 12
+
+    Commands:
+      - 'coins give %Player% 500'
+
+
+
+  '42':
+    Chance: 5
+    Drop-Items: true
+
+    Items:
+      - 'Item:ELYTRA, Amount:1'
+  '44':
+    Chance: 5
+    Drop-Items: true
+
+    Items:
+      - 'Item:BEACON, Amount:1'
+
+
+  '51':
+    Chance: 5
+
+    Commands:
+      - 'excellentcrates:crate key give %Player% epic 1'
+  '52':
+    Chance: 2
+
+    Commands:
+      - 'excellentcrates:crate key give %Player% superior 1'
