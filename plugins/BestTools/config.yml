@@ -6,7 +6,6 @@
 # when breaking blocks or attacking mobs. It also features automatic hotbar
 # refill when you run out of blocks.
 
-
 ###############################
 #######    Commands     #######
 ###############################
@@ -28,7 +27,6 @@
 # /besttools bl remove hotbar        Removes all items in your hotbar from your blacklist
 # /besttools bl reset                Removes all items from your blacklist
 
-
 ###############################
 #######   Permissions   #######
 ###############################
@@ -36,7 +34,6 @@
 # besttools.use:        Allows to use the /besttools (or /bt) command
 # besttools.refill:     Allows to use the /refill (or /rf) command
 # besttools.reload:     Allows to use the /besttools reload command
-
 
 ###############################
 #######  Placeholders   #######
@@ -48,7 +45,6 @@
 # %besttools_rfenabled%    - true if this player has Refill enabled, otherwise false
 # %besttools_hotbaronly%   - true if this player has set BestTools to hotbar-only
 # %besttools_favoriteslot% - the slot number this player chose as favorite slot
-
 
 ###############################
 ####### General config  #######
@@ -151,19 +147,19 @@ check-interval: 4
 # You can set messages to an empty String ("") to avoid displaying those messages.
 
 ##### You can edit these messages yourself or uncomment the existing translations (see below)
-message-besttools-enabled: "&8[&b&l!&8] &b&lSettings &8→ &7AutoTool: &aON"
-message-besttools-disabled: "&8[&b&l!&8] &b&lSettings &8→ &7AutoTool: &cOFF"
-message-refill-enabled: "&7Refill has been &aenabled&7."
-message-refill-disabled: "&7Refill has been &cdisabled&7."
+message-besttools-enabled: "&8[&b&l!&8] &b&lCài đặt &8→ &7Tự động chọn công cụ: &aBẬT"
+message-besttools-disabled: "&8[&b&l!&8] &b&lCài đặt &8→ &7Tự động chọn công cụ: &cTẮT"
+message-refill-enabled: "&7Tự động điền lại đã được &abật&7."
+message-refill-disabled: "&7Tự động điền lại đã được &ctắt&7."
 message-besttools-usage: ""
 message-refill-usage: ""
-message-hotbar-only-enabled: "&7BestTools will only use tools from your hotbar."
-message-hotbar-only-disabled: "&7BestTools will use all tools from your inventory."
-gui-favorite-slot: "Set as favorite slot"
-gui-favorite-slot-lore: "If your hotbar is full and BestTools uses a tool from your inventory, it will be places in this slot."
-gui-besttools-lore: "Automatically chooses the best tools when breaking blocks."
-gui-hotbar-lore: "When enabled, BestTools will only use tools from your hotbar instead of from your whole inventory."
-gui-refill-lore: "Automatically refills empty hotbar slots."
+message-hotbar-only-enabled: "&7BestTools sẽ chỉ sử dụng công cụ từ hotbar của bạn."
+message-hotbar-only-disabled: "&7BestTools sẽ sử dụng tất cả công cụ từ kho đồ của bạn."
+gui-favorite-slot: "Đặt làm ô ưu tiên"
+gui-favorite-slot-lore: "Nếu hotbar của bạn đầy và BestTools sử dụng một công cụ từ kho đồ, công cụ đó sẽ được đặt vào ô này."
+gui-besttools-lore: "Tự động chọn công cụ tốt nhất khi phá khối."
+gui-hotbar-lore: "Khi bật, BestTools sẽ chỉ sử dụng công cụ từ hotbar thay vì toàn bộ kho đồ của bạn."
+gui-refill-lore: "Tự động điền lại các ô trống trong hotbar."
 
 ##### English
 #message-besttools-enabled: "&7BestTools has been &aenabled&7."

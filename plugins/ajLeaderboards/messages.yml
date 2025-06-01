@@ -6,12 +6,12 @@ signs:
         - '&e{VALUE} {VALUENAME}'
         - '&7&m                   '
 formatted:
-    k: k
-    m: m
-    t: t
-    b: b
-    q: q
-    qi: qi
+    k: nghìn
+    m: triệu
+    t: nghìn tỷ
+    b: tỷ
+    q: triệu tỷ
+    qi: nghìn triệu tỷ
     sx: sx
     sp: sp
     o: o
@@ -19,34 +19,34 @@ formatted:
     d: d
     ud: ud
 time:
-    w: 'w '
-    d: 'd '
-    h: 'h '
-    m: 'm '
-    s: s
-noperm: You don't have permission to do this!
+    w: 'tuần '
+    d: 'ngày '
+    h: 'giờ '
+    m: 'phút '
+    s: giây
+noperm: Bạn không có quyền để thực hiện hành động này!
 commands:
     reload:
-        success: '&aConfigs reloaded!'
-        fail: '&cAn error occurred while reloading one of your configs. Check the
-            console for more info.'
+        success: '&aĐã tải lại cấu hình thành công!'
+        fail: '&cĐã xảy ra lỗi khi tải lại một trong các cấu hình của bạn. Xem console
+            để biết thêm chi tiết.'
     export:
-        fileexists: '&cThe file &f{FILE}&c already exists!'
-        starting: '&7Fetching all players from the database. This might take a bit.'
-        fail: '&cAn error occurred while exporting. Check the console for more info.'
-        progress: '&eProgress: &f{DONE}&7/&f{TOTAL}&7 boards fetched'
-        success: '&aThe cache has been exported to the file &f{FILE}&a!'
+        fileexists: '&cTệp &f{FILE}&c đã tồn tại!'
+        starting: '&7Đang lấy tất cả người chơi từ cơ sở dữ liệu. Quá trình này có
+            thể mất một chút thời gian.'
+        fail: '&cĐã xảy ra lỗi khi xuất dữ liệu. Xem console để biết thêm chi tiết.'
+        progress: '&eTiến độ: &f{DONE}&7/&f{TOTAL}&7 bảng xếp hạng đã được lấy'
+        success: '&aDữ liệu đã được xuất thành công vào tệp &f{FILE}&a!'
     viewer:
         success: |4
-
-            &aThe cache has been uploaded and is viewable at&f <hover:show_text:'<yellow>Click to go to&f {URL}'><click:open_url:'{URL}'><white><underlined>{URL}</click></hover>
-        uploading: '&7Uploading..'
+                &aDữ liệu đã được tải lên và có thể xem tại &f <hover:show_text:'<yellow>Nhấn để truy cập &f {URL}'><click:open_url:'{URL}'><white><underlined>{URL}</click></hover>
+        uploading: '&7Đang tải lên..'
     import:
-        nofile: '&cThe file &f{FILE}&c doesnt exist!'
-        starting: '&7Loading all cached stats from &f{FILE}'
-        fail: '&cAn error occurred while importing. Check the console for more info.'
-        insertprogress: '&eProgress: &f{DONE}&7/&f{TOTAL}&7 boards imported'
-        success: '&aThe cache has been imported from the file &f{FILE}&a!'
+        nofile: '&cTệp &f{FILE}&c không tồn tại!'
+        starting: '&7Đang tải tất cả trạng thái đã lưu từ &f{FILE}'
+        fail: '&cĐã xảy ra lỗi khi nhập dữ liệu. Xem console để biết thêm chi tiết.'
+        insertprogress: '&eTiến độ: &f{DONE}&7/&f{TOTAL}&7 bảng xếp hạng đã được nhập'
+        success: '&aDữ liệu đã được nhập thành công từ tệp &f{FILE}&a!'
 no-data:
     lb:
         name: '---'
@@ -57,27 +57,28 @@ no-data:
         name: '---'
         value: '---'
 loading:
-    text: Loading
+    text: Đang tải
     short: -?-
     position: ..
     size: '...'
 no-player-skin:
     default: Superman00800
 updater:
-    slow-feedback: '&7Checking for update and downloading...'
-    disabled: '&cThe updater is disabled! &7Please enable it in the config to download
-        updates.'
-    success: '&aUpdate downloaded! &7Restart the server to apply the update.'
+    slow-feedback: '&7Đang kiểm tra cập nhật và tải về...'
+    disabled: '&cTrình cập nhật đã bị tắt! &7Vui lòng bật trong cấu hình để tải các
+        bản cập nhật.'
+    success: '&aĐã tải về bản cập nhật! &7Khởi động lại server để áp dụng cập nhật.'
     warnings:
-        could-not-delete-old-jar: '&aUpdate downloaded&e but the old jar could not
-            be deleted. &7Please delete the old jar before restarting the server.'
+        could-not-delete-old-jar: '&aĐã tải về bản cập nhật &enhưng không thể xóa
+            tệp JAR cũ. &7Vui lòng xóa tệp JAR cũ trước khi khởi động lại server.'
     errors:
-        no-update-available: '&aYou are already up to date!'
-        while-checking: '&eAn error occurred while checking for an update. &7See the
-            console for more info.'
-        already-downloaded: '&aYou have already downloaded an update! &7Restart the
-            server to apply it.'
-        while-downloading: '&eAn error occurred while downloading an update. &7See
-            the console for more info.'
-        unknown: '&eAn unknown error occurred: {ERROR}'
-        uncaught: '&cAn error occurred while executing this command. &7See the console.'
+        no-update-available: '&aBạn đã sử dụng phiên bản mới nhất!'
+        while-checking: '&eĐã xảy ra lỗi khi kiểm tra cập nhật. &7Xem console để biết
+            thêm chi tiết.'
+        already-downloaded: '&aBạn đã tải về một bản cập nhật! &7Khởi động lại server
+            để áp dụng.'
+        while-downloading: '&eĐã xảy ra lỗi khi tải về bản cập nhật. &7Xem console
+            để biết thêm chi tiết.'
+        unknown: '&eĐã xảy ra lỗi không xác định: {ERROR}'
+        uncaught: '&cĐã xảy ra lỗi khi thực hiện lệnh này. &7Xem console để biết thêm
+            chi tiết.'

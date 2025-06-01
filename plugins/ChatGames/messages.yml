@@ -1,233 +1,222 @@
-unknown_command: '&8[#FF8EFF&l!&8] %prefix% &8→ &cUnknown command.'
-config_reloaded: '&8[#FF8EFF&l!&8] %prefix% &8→ &fThe config files has been reloaded!'
-not_enough_permissions: '&8[#FF8EFF&l!&8] %prefix% &8→ &cYou don`t have enough permissions to execute this command!'
-player_only_command: '&8[#FF8EFF&l!&8] %prefix% &8→ &cThis command can only be executed by players!'
+unknown_command: "&8[#FF8EFF&l!&8] %prefix% &8→ &cLệnh không xác định."
+config_reloaded: "&8[#FF8EFF&l!&8] %prefix% &8→ &fCác file cấu hình đã được tải lại!"
+not_enough_permissions: "&8[#FF8EFF&l!&8] %prefix% &8→ &cBạn không có đủ quyền để thực hiện lệnh này!"
+player_only_command: "&8[#FF8EFF&l!&8] %prefix% &8→ &cLệnh này chỉ có thể được thực hiện bởi người chơi!"
 
-cannot_start_from_disabled: '&8[#FF8EFF&l!&8] %prefix% &8→ &cYou can`t start a chat game from a disabled world!'
-toggle_game: '&8[#FF8EFF&l!&8] %prefix% &8→ &fYou have toggled &a%state% &fchat events!'
-game_started: '&8[#FF8EFF&l!&8] %prefix% &8→ &aYou have started a %game% chat event!'
+cannot_start_from_disabled: "&8[#FF8EFF&l!&8] %prefix% &8→ &cBạn không thể bắt đầu trò chơi chat từ một thế giới đã bị tắt!"
+toggle_game: "&8[#FF8EFF&l!&8] %prefix% &8→ &fBạn đã chuyển trạng thái trò chơi chat thành &a%state% &f!"
+game_started: "&8[#FF8EFF&l!&8] %prefix% &8→ &aBạn đã bắt đầu một trò chơi chat %game%!"
 
-#You can use <center> if you wish to do so in the next 4 messages.
+# Bạn có thể dùng <center> nếu muốn căn giữa trong 4 thông báo tiếp theo.
 top:
-  header: '&b&m---------&e&lTOP CHAT&b&m---------'
-  format: '&c%spot%. &f%player% &8| &e&l%points% &7points'
-  player-stat-format: '&7You`ve got &e&l%player_points% &7wins'
-  footer: '&b&m---------------------------'
-  
-  no_data_message: '&8[#FF8EFF&l!&8] %prefix% &8→ &cThere is no data yet! Win a chat game and get points!'
+  header: "&b&m---------&e&lTOP CHAT&b&m---------"
+  format: "&c%spot%. &f%player% &8| &e&l%points% &7điểm"
+  player-stat-format: "&7Bạn đã có &e&l%player_points% &7lần thắng"
+  footer: "&b&m---------------------------"
+  no_data_message: "&8[#FF8EFF&l!&8] %prefix% &8→ &cChưa có dữ liệu! Thắng một trò chơi chat để nhận điểm!"
 
 help_command:
-  - '&7&m-------------------------------------------------'
-  - '&e&l-ChatGames-'
-  - '&6'
-  - '&6&lCOMMANDS:'
-  - '&6'
-  - '&a/chatgames (type) &f- &3Starts the event type specified instantly.'
-  - '&a/chatgames top &f- &3Shows the top 10 players with most points.'
-  - '&a/chatgames toggle &f- &3Toggle games on or off.'
-  - '&a/chatgames reload &f- &3Reloads the config.yml file.'
-  - '&6'
-  - '&2&lGAME TYPES:'
-  - '&5unscramble, unreverse, reaction, random,  math, trivia'
-  - '&7&m-------------------------------------------------'
-  
-#Use <center> in LIST messages to center the messages, the lines with this will be centered!
+  - "&7&m-------------------------------------------------"
+  - "&e&l-Minigame Chat-"
+  - "&6"
+  - "&6&lLỆNH:"
+  - "&6"
+  - "&a/chatgames (loại) &f- &3Bắt đầu ngay lập tức trò chơi loại được chỉ định."
+  - "&a/chatgames top &f- &3Hiển thị top 10 người chơi có nhiều điểm nhất."
+  - "&a/chatgames toggle &f- &3Bật/tắt trò chơi chat."
+  - "&a/chatgames reload &f- &3Tải lại file config.yml."
+  - "&6"
+  - "&2&lLOẠI TRÒ CHƠI:"
+  - "&5unscramble, unreverse, reaction, random, math, trivia"
+  - "&7&m-------------------------------------------------"
 
-  
+# Sử dụng <center> trong các thông báo dạng LIST để căn giữa, các dòng có <center> sẽ được căn giữa!
+
 #############################
-##    CHATGAME MESSAGES    ##
+##    THÔNG BÁO TRÒ CHƠI CHAT    ##
 #############################
 
-#YOU CAN USE "%display_name%" AS A REPLACEMENT FOR %player% IN correct_message FOR ALL GAMES.
+# BẠN CÓ THỂ DÙNG "%display_name%" THAY THẾ CHO %player% TRONG correct_message CHO TẤT CẢ CÁC TRÒ CHƠI.
 unscramble:
-    gameStartAnnouncement: 
-      - ''
-      - '<center>'
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fYou have &6%timeToGuess% &fseconds to &funscramble: #FF8EFF%word%'
-      - ''
-    correct_message: 
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&6%player% &fhas correctly unscrambled:'
-      - '<center>#FF8EFF%correct_answer%&f &6(%time%s) &fand got a prize!'
-      - ''
-      - '<center>#FF8EFFReward: &a1x Common Key'
-      - ''
-    time_expired_message:
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fThe &6%timeToGuess%s &fhave passed! &fThe unscramble game is now over!'
-      - '<center>The correct answer was #FF8EFF%correct_answer%&f!'
-      - ''
+  gameStartAnnouncement:
+    - ""
+    - "<center>"
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fBạn có &6%timeToGuess% &fgiây để &fgiải đố từ: #FF8EFF%word%"
+    - ""
+  correct_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&6%player% &fđã giải đúng từ:"
+    - "<center>#FF8EFF%correct_answer%&f &6(%time% giây) &fvà nhận được phần thưởng!"
+    - ""
+    - "<center>#FF8EFFPhần thưởng: &a1x Chìa khóa Thường"
+    - ""
+  time_expired_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fThời gian &6%timeToGuess% giây &fđã hết! &fTrò chơi giải đố từ đã kết thúc!"
+    - "<center>Đáp án đúng là #FF8EFF%correct_answer%&f!"
+    - ""
 
 unreverse:
-    gameStartAnnouncement: 
-      - ''
-      - '<center>'
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fYou have &6%timeToGuess% &fseconds to &funreverse: #FF8EFF%word%'
-      - ''
-    correct_message: 
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&6%player% &fwas the fastest to unreverse:'
-      - '<center>#FF8EFF%correct_answer%&f &6(%time%s) &fand got a prize!'
-      - ''
-      - '<center>#FF8EFFReward: &a1x Common Key'
-      - ''
-    time_expired_message:
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fThe &6%timeToGuess%s &fhave passed! &fThe unreverse game is now over!'
-      - '<center>The correct answer was #FF8EFF%correct_answer%&f!'
-      - ''
+  gameStartAnnouncement:
+    - ""
+    - "<center>"
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fBạn có &6%timeToGuess% &fgiây để &fđảo ngược từ: #FF8EFF%word%"
+    - ""
+  correct_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&6%player% &fđã nhanh nhất đảo ngược:"
+    - "<center>#FF8EFF%correct_answer%&f &6(%time% giây) &fvà nhận được phần thưởng!"
+    - ""
+    - "<center>#FF8EFFPhần thưởng: &a1x Chìa khóa Thường"
+    - ""
+  time_expired_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fThời gian &6%timeToGuess% giây &fđã hết! &fTrò chơi đảo ngược từ đã kết thúc!"
+    - "<center>Đáp án đúng là #FF8EFF%correct_answer%&f!"
+    - ""
 
 reaction:
-    gameStartAnnouncement: 
-      - ''
-      - '<center>'
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fYou have &6%timeToGuess% &fseconds to &fwrite out the word: #FF8EFF%word%'
-      - ''
-    correct_message: 
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&6%player% &fwas the fastest to write out:'
-      - '<center>#FF8EFF%correct_answer%&f &6(%time%s) &fand got a prize!'
-      - ''
-      - '<center>#FF8EFFReward: &a1x Common Key'
-      - ''
-    time_expired_message:
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fThe &6%timeToGuess%s &fhave passed! &fThe reaction game is now over!'
-      - '<center>The correct answer was #FF8EFF%correct_answer%&f!'
-      - ''
-      
-fillout:
-    gameStartAnnouncement: 
-      - ''
-      - '<center>'
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fYou have &6%timeToGuess% &fseconds to &ffill in the word: #FF8EFF%word%'
-      - ''
-    correct_message: 
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&6%player% &fwas the fastest to fill:'
-      - '<center>#FF8EFF%correct_answer%&f &6(%time%s) &fand got a prize!'
-      - ''
-      - '<center>#FF8EFFReward: &a1x Common Key'
-      - ''
-    time_expired_message:
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fThe &6%timeToGuess%s &fhave passed! &fThe fillout game is now over!'
-      - '<center>The correct answer was #FF8EFF%correct_answer%&f!'
-      - ''
+  gameStartAnnouncement:
+    - ""
+    - "<center>"
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fBạn có &6%timeToGuess% &fgiây để &fviết lại từ: #FF8EFF%word%"
+    - ""
+  correct_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&6%player% &fđã nhanh nhất viết lại:"
+    - "<center>#FF8EFF%correct_answer%&f &6(%time% giây) &fvà nhận được phần thưởng!"
+    - ""
+    - "<center>#FF8EFFPhần thưởng: &a1x Chìa khóa Thường"
+    - ""
+  time_expired_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fThời gian &6%timeToGuess% giây &fđã hết! &fTrò chơi phản ứng nhanh đã kết thúc!"
+    - "<center>Đáp án đúng là #FF8EFF%correct_answer%&f!"
+    - ""
 
-#In this game, a string of the length specified will be created with random characters
+fillout:
+  gameStartAnnouncement:
+    - ""
+    - "<center>"
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fBạn có &6%timeToGuess% &fgiây để &fđiền từ: #FF8EFF%word%"
+    - ""
+  correct_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&6%player% &fđã nhanh nhất điền:"
+    - "<center>#FF8EFF%correct_answer%&f &6(%time% giây) &fvà nhận được phần thưởng!"
+    - ""
+    - "<center>#FF8EFFPhần thưởng: &a1x Chìa khóa Thường"
+    - ""
+  time_expired_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fThời gian &6%timeToGuess% giây &fđã hết! &fTrò chơi điền từ đã kết thúc!"
+    - "<center>Đáp án đúng là #FF8EFF%correct_answer%&f!"
+    - ""
+
+# Trong trò chơi này, một chuỗi có độ dài chỉ định sẽ được tạo với các ký tự ngẫu nhiên
 random:
-    gameStartAnnouncement: 
-      - ''
-      - '<center>'
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fYou have &6%timeToGuess% &fseconds to &fwrite out the word: #FF8EFF%random%'
-      - ''
-    correct_message: 
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&6%player% &fwas the fastest to write out:'
-      - '<center>#FF8EFF%correct_answer%&f &6(%time%s) &fand got a prize!'
-      - ''
-      - '<center>#FF8EFFReward: &a1x Common Key'
-      - ''
-    time_expired_message:
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fThe &6%timeToGuess%s &fhave passed! &fThe reaction game is now over!'
-      - '<center>The correct answer was #FF8EFF%correct_answer%&f!'
-      - ''
+  gameStartAnnouncement:
+    - ""
+    - "<center>"
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fBạn có &6%timeToGuess% &fgiây để &fviết lại từ: #FF8EFF%random%"
+    - ""
+  correct_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&6%player% &fđã nhanh nhất viết lại:"
+    - "<center>#FF8EFF%correct_answer%&f &6(%time% giây) &fvà nhận được phần thưởng!"
+    - ""
+    - "<center>#FF8EFFPhần thưởng: &a1x Chìa khóa Thường"
+    - ""
+  time_expired_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fThời gian &6%timeToGuess% giây &fđã hết! &fTrò chơi phản ứng nhanh đã kết thúc!"
+    - "<center>Đáp án đúng là #FF8EFF%correct_answer%&f!"
+    - ""
 
 math:
-    gameStartAnnouncement: 
-      - ''
-      - '<center>'
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fYou have &6%timeToGuess% &fseconds to &fsolve: #FF8EFF%equation%'
-      - ''
-    #Here, you can also use '%equation%' in the message if you wish to do so
-    correct_message: 
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&6%player% &fwas the fastest to get:'
-      - '<center>#FF8EFF%correct_answer%&f &6(%time%s) &fand got a prize!'
-      - ''
-      - '<center>#FF8EFFReward: &a1x Common Key'
-      - ''
-    time_expired_message:
-      - ''
-      - '<center>&f %prefix% &f'
-      - ''
-      - '<center>&fThe &6%timeToGuess%s &fhave passed! &fThe math game is now over!'
-      - '<center>The correct answer was #FF8EFF%correct_answer%&f!'
-      - ''
-      
-
-
-
-
+  gameStartAnnouncement:
+    - ""
+    - "<center>"
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fBạn có &6%timeToGuess% &fgiây để &fgiải bài toán: #FF8EFF%equation%"
+    - ""
+  # Ở đây, bạn cũng có thể dùng '%equation%' trong thông báo nếu muốn
+  correct_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&6%player% &fđã nhanh nhất giải được:"
+    - "<center>#FF8EFF%correct_answer%&f &6(%time% giây) &fvà nhận được phần thưởng!"
+    - ""
+    - "<center>#FF8EFFPhần thưởng: &a1x Chìa khóa Thường"
+    - ""
+  time_expired_message:
+    - ""
+    - "<center>&f %prefix% &f"
+    - ""
+    - "<center>&fThời gian &6%timeToGuess% giây &fđã hết! &fTrò chơi toán học đã kết thúc!"
+    - "<center>Đáp án đúng là #FF8EFF%correct_answer%&f!"
+    - ""
 
 #------------------------------------------
 #
-# The games below are DISABLED!
+# Các trò chơi dưới đây đã BỊ TẮT!
 #
 #------------------------------------------
-
-
-
-
 
 variable:
-    #This is the format in which they will appear, you may change amount of times %symbol% is repeated in 'line1and2-format' but all variables in line 3 are as they are shown.
-    line1and2-format: '&c%symbol%&f + &c%symbol%&f + &c%symbol%&f = &e'
-    line3-format: '&c%symbol_1%&f + &c%symbol_2%&f + &b%toGet% &f= &e%result%'
-    gameStartAnnouncement: 
-      - 'Not Enabled'
-    #Here, you can also use '%equation%' in the message if you wish to do so
-    correct_message: 
-      - 'Not Enabled'
-    time_expired_message:
-      - 'Not Enabled'
-          
+  # Đây là định dạng sẽ hiển thị, bạn có thể thay đổi số lần lặp %symbol% trong 'line1and2-format' nhưng tất cả biến trong dòng 3 giữ nguyên như hiển thị.
+  line1and2-format: "&c%symbol%&f + &c%symbol%&f + &c%symbol%&f = &e"
+  line3-format: "&c%symbol_1%&f + &c%symbol_2%&f + &b%toGet% &f= &e%result%"
+  gameStartAnnouncement:
+    - "Chưa bật"
+  # Ở đây, bạn cũng có thể dùng '%equation%' trong thông báo nếu muốn
+  correct_message:
+    - "Chưa bật"
+  time_expired_message:
+    - "Chưa bật"
+
 trivia:
-    gameStartAnnouncement: 
-      - 'Not Enabled'
-    correct_message: 
-      - 'Not Enabled'
-    time_expired_message:
-      - 'Not Enabled'
+  gameStartAnnouncement:
+    - "Chưa bật"
+  correct_message:
+    - "Chưa bật"
+  time_expired_message:
+    - "Chưa bật"

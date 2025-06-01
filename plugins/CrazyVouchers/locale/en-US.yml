@@ -1,68 +1,40 @@
-# Support: https://discord.gg/badbones-s-live-chat-182615261403283459
-# Github: https://github.com/Crazy-Crew
-# 
-# Issues: https://github.com/Crazy-Crew/CrazyVouchers/issues
-# Features: https://github.com/Crazy-Crew/CrazyVouchers/issues
-# 
-# Tips:
-#  1. Make sure to use the {prefix} to add the prefix in front of messages.
-#  2. If you wish to use more than one line for a message just go from a line to a list.
-# Examples:
-#   Line:
-#     No-Permission: '{prefix}&cYou do not have permission to use that command.'
-#   List:
-#     No-Permission:
-#       - '{prefix}&cYou do not have permission'
-#       - '&cto use that command. Please try another.'
 player:
-  survival-only: '{prefix}&cYou must be in survival mode to use vouchers.'
-  no-permission: '{prefix}&cYou do not have permission to use that command!'
+  survival-only: "{prefix}&cBạn phải ở survival mode để dùng voucher."
+  no-permission: "{prefix}&cBạn không có quyền dùng command này!"
   voucher:
-    no-permission: '{prefix}&cYou do not have permission to use that voucher.'
+    no-permission: "{prefix}&cBạn không có quyền dùng voucher đó."
     already-used:
-      value: '{prefix}&cThis voucher has already been used, likely a duped voucher'
-      # This requires the permission crazyvouchers.notify.duped
-      # 
-      # Available placeholders: {player}, {id}
-      notify-staff: '{prefix}{player} has been potentially caught using a duped voucher
-        with the id {id}.'
-    no-permission-offhand: '{prefix}&cYou do not have permission to use vouchers in
-      your off hand.'
-    cant-put-in-crafting-table: '{prefix}&cYou cannot put vouchers in the crafting
-      table.'
-    migrated: '{prefix}&cSuccessfully migrated old vouchers in your inventory.'
-  target-not-online: '{prefix}&cThat player is not online.'
-  hit-limit: '{prefix}&cYou have hit your limit for using this voucher.'
-  two-step-authentication: '{prefix}&7Right click again to confirm that you want to
-    use this voucher.'
+      value: "{prefix}&cVoucher này đã được dùng, có thể là voucher duped."
+      notify-staff: "{prefix}{player} có khả năng bị phát hiện dùng voucher duped với id {id}."
+    no-permission-offhand: "{prefix}&cBạn không có quyền dùng voucher ở off hand."
+    cant-put-in-crafting-table: "{prefix}&cKhông thể đặt voucher vào crafting table."
+    migrated: "{prefix}&cĐã migrate thành công voucher cũ trong inventory của bạn."
+  target-not-online: "{prefix}&cPlayer đó không online."
+  hit-limit: "{prefix}&cBạn đã đạt giới hạn dùng voucher này."
+  two-step-authentication: "{prefix}&7Click chuột phải lần nữa để xác nhận dùng voucher này."
+
 voucher:
   requirements:
-    not-a-number: '{prefix}&c{arg} is not a number.'
-    not-a-voucher: '{prefix}&cThat is not a Voucher Type.'
-    un-stack-item: '{prefix}&cSorry but you can not use this voucher because you have
-      a black-listed permission.'
-    not-in-world: '{prefix}&cYou can not use that voucher here as you are not in a
-      whitelisted world for this voucher.'
-    has-blacklist-perm: '{prefix}&cYou need to unstack that item before you can use
-      it.'
+    not-a-number: "{prefix}&c{arg} không phải là số."
+    not-a-voucher: "{prefix}&cĐó không phải là Voucher Type."
+    un-stack-item: "{prefix}&cBạn không thể dùng voucher này vì có permission bị blacklist."
+    not-in-world: "{prefix}&cBạn không thể dùng voucher ở đây vì không phải world được whitelist."
+    has-blacklist-perm: "{prefix}&cBạn cần unstack item đó trước khi dùng."
   code:
-    unavailable: '{prefix}&cThe Voucher code &6{arg} &cis incorrect or unavailable
-      at this time.'
-    used: '{prefix}&cThe voucher code &6{arg} &chas already been redeemed.'
-  sent-voucher: '{prefix}&3You have just given &6{player} &3a &6{voucher} &3voucher.'
-  # A list of available placeholders: {time}
-  cooldown: '{prefix}Please wait {time}, before using the voucher again'
-  sent-everyone-voucher: '{prefix}&3You have just given all players a &6{voucher}
-    &3voucher.'
+    unavailable: "{prefix}&cMã voucher &6{arg} &csai hoặc không khả dụng lúc này."
+    used: "{prefix}&cMã voucher &6{arg} &cđã được redeem."
+  sent-voucher: "{prefix}&3Bạn vừa gửi &6{player} &3một &6{voucher} &3voucher."
+  cooldown: "{prefix}Vui lòng đợi {time} trước khi dùng voucher lại."
+  sent-everyone-voucher: "{prefix}&3Bạn vừa gửi tất cả player một &6{voucher} &3voucher."
+
 misc:
-  config-reload: '{prefix}&7You have just reloaded the Config.yml'
-  player-only: '{prefix}&cOnly players can use this command.'
+  config-reload: "{prefix}&7Bạn vừa reload Config.yml."
+  player-only: "{prefix}&cChỉ player mới dùng được command này."
   help:
-  - '&8- &6/Voucher help &3Lists all the commands for vouchers.'
-  - '&8- &6/Voucher list &3Lists all available types of vouchers and codes.'
-  - '&8- &6/Voucher redeem <code> &3Allows the player to redeem a voucher code.'
-  - '&8- &6/Voucher give <voucher> [amount] [player] [arguments] &3Gives a player
-    a voucher.'
-  - '&8- &6/Voucher giveAll <voucher> [amount] [arguments] &3Gives all players a voucher.'
-  - '&8- &6/Voucher open [page] &3Opens a GUI so you can get vouchers easily.'
-  - '&8- &6/Voucher reload &3Reloaded the configuration files.'
+    - "&8- &6/Voucher help &3Hiển thị tất cả command của voucher."
+    - "&8- &6/Voucher list &3Hiển thị tất cả loại voucher và code."
+    - "&8- &6/Voucher redeem <code> &3Cho phép player redeem mã voucher."
+    - "&8- &6/Voucher give <voucher> [amount] [player] [arguments] &3Tặng player một voucher."
+    - "&8- &6/Voucher giveAll <voucher> [amount] [arguments] &3Tặng tất cả player một voucher."
+    - "&8- &6/Voucher open [page] &3Mở GUI để lấy voucher dễ dàng."
+    - "&8- &6/Voucher reload &3Reload file config."

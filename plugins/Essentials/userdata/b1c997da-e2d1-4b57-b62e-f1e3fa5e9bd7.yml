@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1748801999440
+  login: 1748801463975
+money: '12100'
+last-account-name: Shuxki
+lastlocation:
+  world: 4b0168ce-3e79-4123-9bef-119722e4c3f0
+  world-name: spawn
+  x: 18.973584662057988
+  y: 100.0
+  z: -16.687024741896828
+  yaw: -10.6876220703125
+  pitch: 11.84988021850586
+logoutlocation:
+  world: 243e459f-912d-4243-941b-d878cd952302
+  world-name: playworld
+  x: 22535.371712428274
+  y: 67.0
+  z: 39599.01000498304
+  yaw: 41.36285400390625
+  pitch: 15.749889373779297

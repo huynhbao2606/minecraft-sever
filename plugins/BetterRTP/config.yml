@@ -1,7 +1,7 @@
 # BetterRTP plugin by SuperRonanCraft! (Join my Public Server mc.RonanCraft.net) #
 # Need help? go to https://ronancraft.net/discord! #
 
-Language-File: en.yml
+Language-File: vi.yml
 Settings:
   Logger:
     Enabled: true # Log all things rtp related to the log.log file

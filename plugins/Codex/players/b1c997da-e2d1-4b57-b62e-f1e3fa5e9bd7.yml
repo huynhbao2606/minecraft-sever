@@ -9,6 +9,17 @@ categories:
     - jobs;01/06/2025;0
     - quests;01/06/2025;0
     - rtp;01/06/2025;0
+    - kits;01/06/2025;0
+    - skills;01/06/2025;0
+    - teams;01/06/2025;0
+    - shop;01/06/2025;0
+    - levels;01/06/2025;0
+    - auction;01/06/2025;0
+    - toolskins;01/06/2025;0
+    - leaderboards;01/06/2025;0
+    - lottery;01/06/2025;0
+    - cosmetics;02/06/2025;0
+    - coinshop;02/06/2025;0
   regions:
     completed: false
     discoveries:
@@ -18,3 +29,4 @@ categories:
     completed: false
     discoveries:
     - teleport_to_nether;01/06/2025;0
+    - claim_daily_reward;02/06/2025;0

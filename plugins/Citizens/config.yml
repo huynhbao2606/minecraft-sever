@@ -244,7 +244,7 @@ general:
     protocollib: true
   translation:
     # Controls translation files - defaults to your system language, set to 'en' if English required
-    locale: ''
+    locale: vi
   # Whether to reset formatting on color change.
   # Emulates old color code behavior.
   reset-formatting-on-color-change: false

@@ -110,34 +110,34 @@
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&e[&aCMI&e] '
-  NoPermission: '&cYou don''t have permission!'
-  CantHavePermission: '&cYou can''t have this permission!'
-  WrongGroup: '&cYou are in wrong group for this!'
-  NoPlayerPermission: '&c[playerName] doesn''t have permission for: [permission]'
-  Ingame: '&cYou can only use this in game!'
-  NoInformation: '&cNo information found!'
+  NoPermission: '&cBạn không có quyền!'
+  CantHavePermission: '&cBạn không thể có quyền này!'
+  WrongGroup: '&cBạn thuộc nhóm sai!'
+  NoPlayerPermission: '&c[playerName] không có quyền: [permission]'
+  Ingame: '&cChỉ sử dụng trong game!'
+  NoInformation: '&cKhông tìm thấy thông tin!'
   Console: '&6Server'
-  FromConsole: '&cYou can only use this in the console!'
-  NotOnline: '&cThe player is not online!'
-  NobodyOnline: '&cThere is no one online!'
-  NoPlayer: '&cCan''t find player with this name!'
-  NoCommand: '&cThere is no command by this name!'
-  cantFindCommand: '&5Couldn''t find &7[%1]&5 command, did you mean &7[%2]&5?'
-  nolocation: '&4Can''t find suitable location'
-  FeatureNotEnabled: '&cThis feature is not enabled!'
-  ModuleNotEnabled: '&cThis module is not enabled!'
-  versionNotSupported: '&cServer version is not supported for this feature'
-  spigotNotSupported: '&cYou need PaperSpigot branch type server for this to work'
-  bungeeNoGo: '&cThis feature will not work on bungee network based servers'
-  clickToTeleport: '&eClick to teleport'
-  UseMaterial: '&4Please use material names!'
-  IncorrectMaterial: '&4Incorrect material name!'
-  UseInteger: '&4Please use numbers!'
-  UseBoolean: '&4Please use True or False!'
-  NoLessThan: '&4Number can''t be less than [amount]!'
-  NoMoreThan: '&4Value can''t be more than [amount]'
-  NoWorld: '&4Can''t find world with this name!'
-  IncorrectLocation: '&4Location defined incorrectly!'
+  FromConsole: '&cChỉ sử dụng trong console!'
+  NotOnline: '&cPlayer không online!'
+  NobodyOnline: '&cKhông có ai online!'
+  NoPlayer: '&cKhông tìm thấy player này!'
+  NoCommand: '&cKhông có command này!'
+  cantFindCommand: '&5Không tìm thấy command &7[%1]&5, ý bạn là &7[%2]&5?'
+  nolocation: '&4Không tìm thấy location phù hợp'
+  FeatureNotEnabled: '&cFeature này chưa được bật!'
+  ModuleNotEnabled: '&cModule này chưa được bật!'
+  versionNotSupported: '&cServer version không hỗ trợ feature này'
+  spigotNotSupported: '&cCần server PaperSpigot để hoạt động'
+  bungeeNoGo: '&cFeature này không hoạt động trên server mạng bungee'
+  clickToTeleport: '&eClick để teleport'
+  UseMaterial: '&4Vui lòng sử dụng tên material!'
+  IncorrectMaterial: '&4Tên material không đúng!'
+  UseInteger: '&4Vui lòng sử dụng số!'
+  UseBoolean: '&4Vui lòng sử dụng True hoặc False!'
+  NoLessThan: '&4Số không được nhỏ hơn [amount]!'
+  NoMoreThan: '&4Giá trị không được lớn hơn [amount]!'
+  NoWorld: '&4Không tìm thấy world này!'
+  IncorrectLocation: '&4Location xác định không đúng!'
   Show: '&eShow'
   Remove: '&cRemove'
   Back: '&eBack'
@@ -148,11 +148,11 @@ info:
   Click: '&eClick'
   Preview: '&ePreview'
   PasteOld: '&ePaste old'
-  ClickToPaste: '&eClick to paste into chat'
-  CantTeleportWorld: '&eYou can''t teleport to this world'
-  CantTeleportNoWorld: '&cTarget world doesn''t exist. Teleportation canceled'
-  ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
-  teleported: '&eYou have been teleported.'
+  ClickToPaste: '&eClick để paste vào chat'
+  CantTeleportWorld: '&eBạn không thể teleport đến world này'
+  CantTeleportNoWorld: '&cWorld mục tiêu không tồn tại. Teleport canceled'
+  ClickToConfirmDelete: '&eClick để xác nhận remove &6[name]'
+  teleported: '&eBạn đã được teleported.'
   PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
   Spliter: '&e--------------------------------------------------'
   SpliterValue: '&e------------------ &6[value] &e------------------'
@@ -161,39 +161,38 @@ info:
   ListSpliter: ', '
   ProgressBarFill: '&2▏'
   ProgressBarEmpty: '&e▏'
-  nothingInHand: '!actionbar!&eYou need to hold item in hand'
-  nothingInHandLeather: '&eYou need to hold leather item in hand'
-  nothingToShow: '&eNothing to show'
-  noItem: '&cCan''t find item'
-  dontHaveItem: '&cYou don''t have &6[amount]x [itemName] &cin your inventory'
-  wrongWorld: '&cCan''t do this in this world'
-  differentWorld: '&cDifferent worlds'
-  HaveItem: '&cYou have &6[amount]x [itemName] &cin your inventory'
-  cantDoInGamemode: '&eYou can''t do this in this game mode'
-  cantDoForPlayer: '&eYou can''t do this to &6[playerDisplayName]'
-  cantDoForYourSelf: '&eYou can''t do this to yourself'
-  cantDetermineMobType: '&cCan''t determine mob type from &e[type] &cvariable'
-  cantRename: '!actionbar!&eYou can''t use this name'
-  confirmRedefine: '&eClick to confirm redefining'
-  cantEdit: '&eYou can''t edit this'
-  wrongName: '&cWrong name'
+  nothingInHand: '!actionbar!&eCần cầm item trên tay'
+  nothingInHandLeather: '&eCần cầm item leather trên tay'
+  nothingToShow: '&eKhông có gì để show'
+  noItem: '&cKhông tìm thấy item'
+  dontHaveItem: '&cBạn không có &6[amount]x [itemName] &ctrong inventory'
+  wrongWorld: '&cKhông thể thực hiện ở world này'
+  differentWorld: '&cWorld khác nhau'
+  HaveItem: '&cBạn có &6[amount]x [itemName] &ctrong inventory'
+  cantDoInGamemode: '&eKhông thể thực hiện ở gamemode này'
+  cantDoForPlayer: '&eKhông thể thực hiện với &6[playerDisplayName]'
+  cantDoForYourSelf: '&eKhông thể tự thực hiện'
+  cantDetermineMobType: '&cKhông xác định được mob type từ &e[type] &cvariable'
+  cantRename: '!actionbar!&eKhông thể sử dụng tên này'
+  confirmRedefine: '&eClick để xác nhận redefine'
+  cantEdit: '&eBạn không thể edit'
+  wrongName: '&cTên sai'
   unknown: unknown
-  invalidName: '&cInvalid name'
-  alreadyexist: '&4This name is taken'
-  dontexist: '&4Nothing found by this name'
-  worldDontExist: '&cTarget world can''t be accessed anymore. Can''t teleport you
-    there!'
+  invalidName: '&cTên không hợp lệ'
+  alreadyexist: '&4Tên này đã được sử dụng'
+  dontexist: '&4Không tìm thấy'
+  worldDontExist: '&cWorld mục tiêu không thể truy cập. Không thể teleport!'
   notSet: not set
-  lookAtSign: '&eLook at sign'
-  lookAtBlock: '&eLook at block'
-  lookAtEntity: '&eLook at entity'
-  noSpace: '&eNot enough free space'
-  notOnGround: '&eYou can''t perform this while flying'
+  lookAtSign: '&eNhìn vào sign'
+  lookAtBlock: '&eNhìn vào block'
+  lookAtEntity: '&eNhìn vào entity'
+  noSpace: '&eKhông đủ không gian trống'
+  notOnGround: '&eKhông thể thực hiện khi đang flying'
   bungee:
     Online: '&6Online'
     Offline: '&cOffline'
-    not: '&cServer doesn''t belong to bungee network'
-    noserver: '&cCan''t find server by this name!'
+    not: '&cServer không thuộc mạng bungee'
+    noserver: '&cKhông tìm thấy server này!'
     server: '&eServer: &7[name]'
   variables:
     am: '&eAM'
@@ -213,22 +212,22 @@ info:
     flying: '&6Flying'
     notflying: '&6Not flying'
   Inventory:
-    Full: '&5Your inventory is full. Can''t add item'
-    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
+    Full: '&5Inventory đầy. Không thể thêm item'
+    FullDrop: '&5Không đủ chỗ. Item đã bị drop xuống đất'
   TimeNotRecorded: '&e-No record-'
-  months: '&e[months] &6months '
-  oneMonth: '&e[months] &6month '
-  weeks: '&e[weeks] &6weeks '
-  oneWeek: '&e[weeks] &6week '
-  years: '&e[years] &6years '
-  oneYear: '&e[years] &6year '
-  day: '&e[days] &6days '
-  oneDay: '&e[days] &6day '
-  hour: '&e[hours] &6hours '
-  oneHour: '&e[hours] &6hour '
-  min: '&e[mins] &6min '
-  sec: '&e[secs] &6sec '
-  nextPageConsole: '&fFor next page perform &5[command]'
+  months: '&e[months] &6tháng '
+  oneMonth: '&e[months] &6tháng '
+  weeks: '&e[weeks] &6tuần '
+  oneWeek: '&e[weeks] &6tuần '
+  years: '&e[years] &6năm '
+  oneYear: '&e[years] &6năm '
+  day: '&e[days] &6ngày '
+  oneDay: '&e[days] &6ngày '
+  hour: '&e[hours] &6giờ '
+  oneHour: '&e[hours] &6giờ '
+  min: '&e[mins] &6phút '
+  sec: '&e[secs] &6giây '
+  nextPageConsole: '&fĐể xem page tiếp theo, thực hiện &5[command]'
   prevPage: '&2----<< &6Prev '
   prevCustomPage: '&2----<< &6[value] '
   prevPageGui: '&6Previous page '
@@ -237,12 +236,12 @@ info:
   prevCustomPageOff: '&2----<< &7[value] '
   prevPageHover: '&7<<<'
   firstPageHover: '&7|<'
-  nextPage: '&6 Next &2>>----'
-  nextCustomPage: '&6 [value] &2>>----'
+  nextPage: '&6Next &2>>----'
+  nextCustomPage: '&6[value] &2>>----'
   nextPageGui: '&6Next Page'
-  nextPageClean: '&6 Next'
-  nextPageOff: '&7 Next &2>>----'
-  nextCustomPageOff: '&7 [value] &2>>----'
+  nextPageClean: '&6Next'
+  nextPageOff: '&7Next &2>>----'
+  nextCustomPageOff: '&7[value] &2>>----'
   nextPageHover: '&7>>>'
   lastPageHover: '&7>|'
   pageCount: '&2[current]&7/&2[total]'
@@ -252,147 +251,147 @@ info:
   circle: '&3Circle'
   square: '&5Square'
   clear: '&7Clear'
-  protectedArea: '&cProtected area. Can''t do this here.'
-  valueToLong: '&eValue is too high. Max: [max]'
-  valueToShort: '&eValue is too low. Min: [min]'
+  protectedArea: '&cKhu vực bảo vệ. Không thể thực hiện.'
+  valueToLong: '&eGiá trị quá cao. Max: [max]'
+  valueToShort: '&eGiá trị quá thấp. Min: [min]'
   pickIcon: '&8Pick icon'
   Spawner: '&r[type] Spawner'
   DamageCause:
     block_explosion: Explosion
-    campfire: campfire
+    campfire: Campfire
     contact: Block Damage
-    cramming: cramming
+    cramming: Cramming
     custom: Unknown
-    dragon_breath: Dragon breath
+    dragon_breath: Dragon Breath
     drowning: Drowning
-    dryout: dryout
-    entity_attack: Entity attack
+    dryout: Dryout
+    entity_attack: Entity Attack
     entity_explosion: Explosion
-    entity_sweep_attack: entity sweep attack
+    entity_sweep_attack: Entity Sweep Attack
     fall: Fall
-    falling_block: Falling block
+    falling_block: Falling Block
     fire: Fire
     fire_tick: Fire
-    fly_into_wall: Fly into wall
-    freeze: freeze
-    hot_floor: Magma block
-    kill: kill
+    fly_into_wall: Fly into Wall
+    freeze: Freeze
+    hot_floor: Magma Block
+    kill: Kill
     lava: Lava
     lightning: Lightning
     magic: Magic
     melting: Melting
     poison: Poison
     projectile: Projectile
-    sonic_boom: sonic boom
+    sonic_boom: Sonic Boom
     starvation: Starvation
     suffocation: Suffocation
     suicide: Suicide
     thorns: Thorns
     void: Void
     wither: Wither
-    world_border: world border
+    world_border: World Border
   EntityType:
-    acacia_boat: Acacia boat
-    acacia_chest_boat: Acacia chest boat
+    acacia_boat: Acacia Boat
+    acacia_chest_boat: Acacia Chest Boat
     allay: Allay
-    area_effect_cloud: Area effect cloud
+    area_effect_cloud: Area Effect Cloud
     armadillo: Armadillo
-    armor_stand: Armor stand
+    armor_stand: Armor Stand
     arrow: Arrow
     axolotl: Axolotl
-    bamboo_chest_raft: Bamboo chest raft
-    bamboo_raft: Bamboo raft
+    bamboo_chest_raft: Bamboo Chest Raft
+    bamboo_raft: Bamboo Raft
     bat: Bat
     bee: Bee
-    birch_boat: Birch boat
-    birch_chest_boat: Birch chest boat
+    birch_boat: Birch Boat
+    birch_chest_boat: Birch Chest Boat
     blaze: Blaze
-    block_display: Block display
+    block_display: Block Display
     bogged: Bogged
     breeze: Breeze
-    breeze_wind_charge: Breeze wind charge
+    breeze_wind_charge: Breeze Wind Charge
     camel: Camel
     cat: Cat
-    cave_spider: Cave spider
-    cherry_boat: Cherry boat
-    cherry_chest_boat: Cherry chest boat
-    chest_minecart: Chest minecart
+    cave_spider: Cave Spider
+    cherry_boat: Cherry Boat
+    cherry_chest_boat: Cherry Chest Boat
+    chest_minecart: Chest Minecart
     chicken: Chicken
     cod: Cod
-    command_block_minecart: Command block minecart
+    command_block_minecart: Command Block Minecart
     cow: Cow
     creaking: Creaking
     creeper: Creeper
-    dark_oak_boat: Dark oak boat
-    dark_oak_chest_boat: Dark oak chest boat
+    dark_oak_boat: Dark Oak Boat
+    dark_oak_chest_boat: Dark Oak Chest Boat
     dolphin: Dolphin
     donkey: Donkey
-    dragon_fireball: Dragon fireball
+    dragon_fireball: Dragon Fireball
     drowned: Drowned
     egg: Egg
-    elder_guardian: Elder guardian
+    elder_guardian: Elder Guardian
     enderman: Enderman
     endermite: Endermite
-    ender_dragon: Ender dragon
-    ender_pearl: Ender pearl
-    end_crystal: End crystal
+    ender_dragon: Ender Dragon
+    ender_pearl: Ender Pearl
+    end_crystal: End Crystal
     evoker: Evoker
-    evoker_fangs: Evoker fangs
-    experience_bottle: Experience bottle
-    experience_orb: Experience orb
-    eye_of_ender: Eye of ender
-    falling_block: Falling block
+    evoker_fangs: Evoker Fangs
+    experience_bottle: Experience Bottle
+    experience_orb: Experience Orb
+    eye_of_ender: Eye of Ender
+    falling_block: Falling Block
     fireball: Fireball
-    firework_rocket: Firework rocket
-    fishing_bobber: Fishing bobber
+    firework_rocket: Firework Rocket
+    fishing_bobber: Fishing Bobber
     fox: Fox
     frog: Frog
-    furnace_minecart: Furnace minecart
+    furnace_minecart: Furnace Minecart
     ghast: Ghast
     giant: Giant
-    glow_item_frame: Glow item frame
-    glow_squid: Glow squid
+    glow_item_frame: Glow Item Frame
+    glow_squid: Glow Squid
     goat: Goat
     guardian: Guardian
     hoglin: Hoglin
-    hopper_minecart: Hopper minecart
+    hopper_minecart: Hopper Minecart
     horse: Horse
     husk: Husk
     illusioner: Illusioner
     interaction: Interaction
-    iron_golem: Iron golem
+    iron_golem: Iron Golem
     item: Item
-    item_display: Item display
-    item_frame: Item frame
-    jungle_boat: Jungle boat
-    jungle_chest_boat: Jungle chest boat
-    leash_knot: Leash knot
-    lightning_bolt: Lightning bolt
+    item_display: Item Display
+    item_frame: Item Frame
+    jungle_boat: Jungle Boat
+    jungle_chest_boat: Jungle Chest Boat
+    leash_knot: Leash Knot
+    lightning_bolt: Lightning Bolt
     llama: Llama
-    llama_spit: Llama spit
-    magma_cube: Magma cube
-    mangrove_boat: Mangrove boat
-    mangrove_chest_boat: Mangrove chest boat
+    llama_spit: Llama Spit
+    magma_cube: Magma Cube
+    mangrove_boat: Mangrove Boat
+    mangrove_chest_boat: Mangrove Chest Boat
     marker: Marker
     minecart: Minecart
     mooshroom: Mooshroom
     mule: Mule
-    oak_boat: Oak boat
-    oak_chest_boat: Oak chest boat
+    oak_boat: Oak Boat
+    oak_chest_boat: Oak Chest Boat
     ocelot: Ocelot
-    ominous_item_spawner: Ominous item spawner
+    ominous_item_spawner: Ominous Item Spawner
     painting: Painting
-    pale_oak_boat: Pale oak boat
-    pale_oak_chest_boat: Pale oak chest boat
+    pale_oak_boat: Pale Oak Boat
+    pale_oak_chest_boat: Pale Oak Chest Boat
     panda: Panda
     parrot: Parrot
     phantom: Phantom
     pig: Pig
     piglin: Piglin
-    piglin_brute: Piglin brute
+    piglin_brute: Piglin Brute
     pillager: Pillager
     player: Player
-    polar_bear: Polar bear
+    polar_bear: Polar Bear
     potion: Potion
     pufferfish: Pufferfish
     rabbit: Rabbit
@@ -400,179 +399,179 @@ info:
     salmon: Salmon
     sheep: Sheep
     shulker: Shulker
-    shulker_bullet: Shulker bullet
+    shulker_bullet: Shulker Bullet
     silverfish: Silverfish
     skeleton: Skeleton
-    skeleton_horse: Skeleton horse
+    skeleton_horse: Skeleton Horse
     slime: Slime
-    small_fireball: Small fireball
+    small_fireball: Small Fireball
     sniffer: Sniffer
     snowball: Snowball
-    snow_golem: Snow golem
-    spawner_minecart: Spawner minecart
-    spectral_arrow: Spectral arrow
+    snow_golem: Snow Golem
+    spawner_minecart: Spawner Minecart
+    spectral_arrow: Spectral Arrow
     spider: Spider
-    spruce_boat: Spruce boat
-    spruce_chest_boat: Spruce chest boat
+    spruce_boat: Spruce Boat
+    spruce_chest_boat: Spruce Chest Boat
     squid: Squid
     stray: Stray
     strider: Strider
     tadpole: Tadpole
-    text_display: Text display
-    tnt: Tnt
-    tnt_minecart: Tnt minecart
-    trader_llama: Trader llama
+    text_display: Text Display
+    tnt: TNT
+    tnt_minecart: TNT Minecart
+    trader_llama: Trader Llama
     trident: Trident
-    tropical_fish: Tropical fish
+    tropical_fish: Tropical Fish
     turtle: Turtle
     unknown: Unknown
     vex: Vex
     villager: Villager
     vindicator: Vindicator
-    wandering_trader: Wandering trader
+    wandering_trader: Wandering Trader
     warden: Warden
-    wind_charge: Wind charge
+    wind_charge: Wind Charge
     witch: Witch
     wither: Wither
-    wither_skeleton: Wither skeleton
-    wither_skull: Wither skull
+    wither_skeleton: Wither Skeleton
+    wither_skull: Wither Skull
     wolf: Wolf
     zoglin: Zoglin
     zombie: Zombie
-    zombie_horse: Zombie horse
-    zombie_villager: Zombie villager
-    zombified_piglin: Zombified piglin
+    zombie_horse: Zombie Horse
+    zombie_villager: Zombie Villager
+    zombified_piglin: Zombified Piglin
   # Avoid adding color codes to the enchant name
   EnchantNames:
-    wind_burst: Wind_burst
-    riptide: Riptide
-    blindness: Blindness
-    withered_arrows: Withered_arrows
-    arrow_damage: Power
-    infernus: Infernus
-    hardened: Hardened
-    piercing: Piercing
-    replanter: Replanter
-    regrowth: Regrowth
-    ice_aspect: Ice_aspect
-    lingering: Lingering
-    depth_strider: DepthStrider
-    fire_aspect: FireAspect
-    confusing_arrows: Confusing_arrows
-    confusion: Confusion
-    river_master: River_master
-    cold_steel: Cold_steel
-    dragonfire_arrows: Dragonfire_arrows
-    soulbound: Soulbound
-    ender_bow: Ender_bow
-    nimble: Nimble
-    curse_of_fragility: Curse_of_fragility
-    rocket: Rocket
-    temper: Temper
-    thrifty: Thrifty
-    breach: Breach
-    curse_of_mediocrity: Curse_of_mediocrity
-    arrow_fire: Flame
-    ghast: Ghast
-    oxygen: Respiration
-    durability: Unbreaking
-    restore: Restore
-    scavenger: Scavenger
-    lucky_miner: Lucky_miner
-    fire_shield: Fire_shield
-    impaling: Impaling
-    decapitator: Decapitator
-    blast_mining: Blast_mining
-    protection_explosions: BlastProtection
-    silk_touch: SilkTouch
-    exp_hunter: Exp_hunter
-    curse_of_misfortune: Curse_of_misfortune
-    sonic: Sonic
-    darkness_arrows: Darkness_arrows
-    poisoned_arrows: Poisoned_arrows
-    silk_chest: Silk_chest
-    protection_environmental: Protection
-    haste: Haste
-    cutter: Cutter
-    flame_walker: Flame_walker
-    density: Density
-    knockback: Knockback
-    darkness_cloak: Darkness_cloak
+    ice_aspect: Ice Aspect
+    wither: Wither
+    quick_charge: Quick Charge
+    loot_bonus_blocks: Fortune
+    exhaust: Exhaust
     survivalist: Survivalist
     thorns: Thorns
-    divine_touch: Divine_touch
-    village_defender: Village_defender
-    swiper: Swiper
-    smelter: Smelter
-    lure: Lure
-    hover: Hover
-    loyalty: Loyalty
-    damage_undead: Smite
-    saturation: Saturation
-    vanishing_curse: VanishingCurse
-    wither: Wither
-    bunny_hop: Bunny_hop
-    multishot: Multishot
-    damage_arthropods: BaneOfArthropods
-    self_destruction: Self_destruction
-    treasure_hunter: Treasure_hunter
-    arrow_infinite: Infinity
-    curse_of_death: Curse_of_death
-    electrified_arrows: Electrified_arrows
-    dig_speed: Efficiency
-    luck: Luck
-    loot_bonus_blocks: Fortune
-    elemental_protection: Elemental_protection
-    protection_fire: FireProtection
-    curse_of_drowned: Curse_of_drowned
-    double_strike: Double_strike
-    sweeping_edge: SweepingEdge
-    channeling: Channeling
-    thunder: Thunder
-    mending: Mending
-    soul_speed: SOULSPEED
-    sniper: Sniper
-    bomber: Bomber
-    frost_walker: FrostWalker
-    veinminer: Veinminer
-    water_worker: AquaAffinity
-    protection_fall: FallProtection
-    swift_sneak: SWIFTSNEAK
-    ice_shield: Ice_shield
-    protection_projectile: ProjectileProtection
-    damage_all: Sharpness
+    oxygen: Respiration
     surprise: Surprise
-    flare: Flare
-    vampiric_arrows: Vampiric_arrows
-    venom: Venom
-    aquaman: Aquaman
-    quick_charge: QUICKCHARGE
-    rage: Rage
-    telekinesis: Telekinesis
-    auto_reel: Auto_reel
-    paralyze: Paralyze
-    rebound: Rebound
-    binding_curse: BindingCurse
-    bane_of_netherspawn: Bane_of_netherspawn
-    night_vision: Night_vision
-    double_catch: Double_catch
-    exhaust: Exhaust
-    loot_bonus_mobs: Looting
-    stopping_force: Stopping_force
-    tunnel: Tunnel
+    damage_undead: Smite
+    mending: Mending
+    haste: Haste
     vampire: Vampire
+    blindness: Blindness
+    temper: Temper
+    swift_sneak: Swift Sneak
+    aquaman: Aquaman
+    knockback: Knockback
+    river_master: River Master
+    veinminer: Veinminer
+    confusing_arrows: Confusing Arrows
+    exp_hunter: Exp Hunter
+    ender_bow: Ender Bow
+    paralyze: Paralyze
+    hardened: Hardened
+    silk_chest: Silk Chest
+    saturation: Saturation
+    ice_shield: Ice Shield
+    smelter: Smelter
+    night_vision: Night Vision
+    cutter: Cutter
+    village_defender: Village Defender
+    sweeping_edge: Sweeping Edge
+    darkness_cloak: Darkness Cloak
+    density: Density
+    seasoned_angler: Seasoned Angler
+    electrified_arrows: Electrified Arrows
+    confusion: Confusion
+    stopping_force: Stopping Force
+    flare: Flare
+    replanter: Replanter
+    telekinesis: Telekinesis
+    curse_of_breaking: Curse of Breaking
+    darkness_arrows: Darkness Arrows
+    loot_bonus_mobs: Looting
+    dragonfire_arrows: Dragonfire Arrows
+    protection_fire: Fire Protection
+    piercing: Piercing
+    auto_reel: Auto Reel
+    silk_touch: Silk Touch
+    riptide: Riptide
+    protection_environmental: Protection
+    hover: Hover
+    vanishing_curse: Vanishing Curse
+    infernus: Infernus
+    bunny_hop: Bunny Hop
+    frost_walker: Frost Walker
+    arrow_damage: Power
+    damage_all: Sharpness
+    protection_fall: Fall Protection
+    sniper: Sniper
+    sonic: Sonic
+    soulbound: Soulbound
+    arrow_fire: Flame
+    self_destruction: Self Destruction
+    protection_explosions: Blast Protection
+    blast_mining: Blast Mining
+    depth_strider: Depth Strider
+    water_worker: Aqua Affinity
+    fire_shield: Fire Shield
+    venom: Venom
+    damage_arthropods: Bane of Arthropods
+    scavenger: Scavenger
+    luck: Luck
+    curse_of_drowned: Curse of Drowned
+    durability: Unbreaking
+    swiper: Swiper
+    soul_speed: Soul Speed
+    elemental_protection: Elemental Protection
+    curse_of_mediocrity: Curse of Mediocrity
+    cold_steel: Cold Steel
+    rocket: Rocket
+    loyalty: Loyalty
+    nimble: Nimble
+    restore: Restore
+    dig_speed: Efficiency
+    protection_projectile: Projectile Protection
+    vampiric_arrows: Vampiric Arrows
+    explosive_arrows: Explosive Arrows
+    impaling: Impaling
+    tunnel: Tunnel
+    breach: Breach
+    curse_of_misfortune: Curse of Misfortune
+    treasure_hunter: Treasure Hunter
+    rebound: Rebound
     arrow_knockback: Punch
-    curse_of_breaking: Curse_of_breaking
-    seasoned_angler: Seasoned_angler
-    explosive_arrows: Explosive_arrows
+    divine_touch: Divine Touch
+    double_catch: Double Catch
+    bomber: Bomber
+    double_strike: Double Strike
+    thrifty: Thrifty
     cure: Cure
+    thunder: Thunder
+    channeling: Channeling
+    curse_of_death: Curse of Death
+    regrowth: Regrowth
+    rage: Rage
+    ghast: Ghast
+    lure: Lure
+    arrow_infinite: Infinity
+    decapitator: Decapitator
+    flame_walker: Flame Walker
+    lucky_miner: Lucky Miner
+    fire_aspect: Fire Aspect
+    withered_arrows: Withered Arrows
+    multishot: Multishot
+    poisoned_arrows: Poisoned Arrows
+    lingering: Lingering
+    curse_of_fragility: Curse of Fragility
+    binding_curse: Binding Curse
+    bane_of_netherspawn: Bane of Netherspawn
+    wind_burst: Wind Burst
   PotionEffectAliases:
     instanthealth:
-    - Instant health
+    - Instant Health
     invisibility:
     - Invisibility
     waterbreathing:
-    - Water breathing
+    - Water Breathing
     resistance:
     - Resistance
     unluck:
@@ -588,45 +587,45 @@ info:
     hunger:
     - Hunger
     slowfalling:
-    - Slow falling
+    - Slow Falling
     weaving:
     - Weaving
     fireresistance:
-    - Fire resistance
+    - Fire Resistance
     saturation:
     - Saturation
     raidomen:
-    - Raid omen
+    - Raid Omen
     jumpboost:
-    - Jump boost
+    - Jump Boost
     dolphinsgrace:
-    - Dolphins grace
+    - Dolphin's Grace
     miningfatigue:
-    - Mining fatigue
+    - Mining Fatigue
     healthboost:
-    - Health boost
+    - Health Boost
     regeneration:
     - Regeneration
     conduitpower:
-    - Conduit power
+    - Conduit Power
     badomen:
-    - Bad omen
+    - Bad Omen
     luck:
     - Luck
     speed:
     - Speed
     trialomen:
-    - Trial omen
+    - Trial Omen
     strength:
     - Strength
     darkness:
     - Darkness
     heroofthevillage:
-    - Hero of the village
+    - Hero of the Village
     levitation:
     - Levitation
     instantdamage:
-    - Instant damage
+    - Instant Damage
     oozing:
     - Oozing
     weakness:
@@ -634,7 +633,7 @@ info:
     nausea:
     - Nausea
     windcharged:
-    - Wind charged
+    - Wind Charged
     absorption:
     - Absorption
     wither:
@@ -644,31 +643,31 @@ info:
     infested:
     - Infested
     nightvision:
-    - Night vision
+    - Night Vision
 direction:
-  n: North
-  ne: North East
-  e: East
-  se: South East
-  s: South
-  sw: South West
-  w: West
-  nw: North West
+  n: Bắc
+  ne: Đông Bắc
+  e: Đông
+  se: Đông Nam
+  s: Nam
+  sw: Tây Nam
+  w: Tây
+  nw: Tây Bắc
 modify:
-  middlemouse: '&2Middle mouse click to edit'
-  qButtonEdit: '&2Click Q to edit'
-  newItem: '&7Place new item here'
+  middlemouse: '&2Click chuột giữa để edit'
+  qButtonEdit: '&2Click Q để edit'
+  newItem: '&7Đặt item mới tại đây'
   newLine: '&2<NewLine>'
-  newLineHover: '&2Add new line'
+  newLineHover: '&2Thêm dòng mới'
   newPage: '&2<NewPage>'
-  newPageHover: '&2Create new page'
+  newPageHover: '&2Tạo page mới'
   removePage: '&c<RemovePage>'
   removePageHover: '&cRemove page'
   deleteSymbol: ' &c[X]'
   deleteSymbolHover: '&cDelete &e[text]'
   extraEditSymbol: ' &6!'
   addSymbol: '&2[+]'
-  addSymbolHover: '&2Add new'
+  addSymbolHover: '&2Thêm mới'
   cancelSymbol: ' &7&l[X]'
   cancelSymbolHover: '&aCancel'
   acceptSymbol: ' &2&l[✔]'
@@ -690,7 +689,7 @@ modify:
   listDownSymbolHover: '&eDown'
   listNumbering: '&e[number]. '
   listAlign: '&80'
-  ChangeHover: '&eClick to change'
+  ChangeHover: '&eClick để change'
   ChangeCommands: '&eCommands'
   enabledColor: '&6'
   disabledColor: '&7'
@@ -698,32 +697,32 @@ modify:
   commandList: ' &e[command]  '
   emptyLine: '&7[Empty line]'
   commandEdit: '&eEdit list'
-  nameAddInfo: '&eEnter new name. Type &6cancel &eto cancel'
-  lineAddInfo: '&eEnter new line. Type &6cancel &eto cancel'
-  commandAddInfo: '&eEnter new command. Type &6cancel &eto cancel'
-  commandAddInformationHover: "&e[playerName] can be used to get player name \n&eTo\
-    \ include delay in commands: \n&edelay! 5 \n&eSpecialized commands are supported.\
-    \ More info at \n&ehttps://www.zrips.net/cmi/commands/specialized/"
-  commandEditInfo: '&eClick to paste old text. Type &6cancel &eto cancel action'
-  listLimit: '&eList can''t be bigger than &6[amount] &eentries'
-  commandEditInfoHover: '&eClick to paste old text'
+  nameAddInfo: '&eNhập tên mới. Gõ &6cancel &eđể cancel'
+  lineAddInfo: '&eNhập dòng mới. Gõ &6cancel &eđể cancel'
+  commandAddInfo: '&eNhập command mới. Gõ &6cancel &eđể cancel'
+  commandAddInformationHover: "&e[playerName] có thể dùng để lấy tên player \n&eĐể\
+    \ thêm delay trong commands: \n&edelay! 5 \n&eHỗ trợ specialized commands. Xem\
+    \ thêm tại \n&ehttps://www.zrips.net/cmi/commands/specialized/"
+  commandEditInfo: '&eClick để paste text cũ. Gõ &6cancel &eđể cancel'
+  listLimit: '&eList không thể lớn hơn &6[amount] &eentries'
+  commandEditInfoHover: '&eClick để paste text cũ'
 teleportation:
-  relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported
-    to a safe location.'
+  relocation: '!actionbar!&4Location teleport bị chặn. Bạn đã được teleported đến
+    location an toàn.'
 econ:
-  noMoney: '&cYou have no money'
+  noMoney: '&cBạn không có tiền'
   charged: '!actionbar!&fCharged: &6[amount]'
-  notEnoughMoney: '&cYou dont have enough money. Required (&6[amount]&c)'
-  tooMuchMoney: '&cYou have too much money'
+  notEnoughMoney: '&cKhông đủ tiền. Cần (&6[amount]&c)'
+  tooMuchMoney: '&cBạn có quá nhiều tiền'
 Selection:
-  SelectPoints: '&cSelect 2 points with selection tool! AKA: &6[tool]'
-  PrimaryPoint: '&ePlaced &6Primary &eSelection Point [point]'
-  SecondaryPoint: '&ePlaced &6Secondary &eSelection Point [point]'
+  SelectPoints: '&cChọn 2 điểm bằng selection tool! AKA: &6[tool]'
+  PrimaryPoint: '&eĐặt &6Primary &eSelection Point [point]'
+  SecondaryPoint: '&eĐặt &6Secondary &eSelection Point [point]'
   CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
   CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
   Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
 Location:
-  Title: '&8Players location'
+  Title: '&8Player location'
   Killer: '&eKiller: &6[killer]'
   OneLiner: '&eLocation: &6[location]'
   DeathReason: '&eDeath Reason: &6[reason]'
@@ -744,11 +743,11 @@ command:
       cmdInfoFormat: '[command] &f- &e[description]'
       cmdFormat: '&6/[command]&f[arguments]'
       helpPageDescription: '&e* [description]'
-      explanation: '&e * [explanation]'
+      explanation: '&e* [explanation]'
       title: '&e------ ======= &6Help&e &e======= ------'
   nocmd:
     help:
-      info: '&eShows all available commands'
+      info: '&eShow tất cả commands có sẵn'
       args: ''
   clearcache:
     help:
@@ -756,9 +755,9 @@ command:
       args: ''
   reload:
     help:
-      info: '&eReloads plugins config and locale files'
+      info: '&eReload config và locale files của plugin'
       args: ''
     info:
-      feedback: '&6CMIL Configs and locale files reloaded! Took [ms]ms'
-      failedConfig: '&4Failed to load config file! Check spelling!'
-      failedLocale: '&4Failed to load locale file! Check spelling!'
+      feedback: '&6CMIL Configs và locale files đã reload! Mất [ms]ms'
+      failedConfig: '&4Không load được config file! Kiểm tra lỗi chính tả!'
+      failedLocale: '&4Không load được locale file! Kiểm tra lỗi chính tả!'

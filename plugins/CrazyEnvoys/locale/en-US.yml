@@ -1,94 +1,69 @@
-# Support: https://discord.gg/badbones-s-live-chat-182615261403283459
-# Github: https://github.com/Crazy-Crew
-# 
-# Issues: https://github.com/Crazy-Crew/CrazyEnvoys/issues
-# Features: https://github.com/Crazy-Crew/CrazyEnvoys/issues
-# 
-# Tips:
-#  1. Make sure to use the {prefix} to add the prefix in front of messages.
-#  2. If you wish to use more than one line for a message just go from a line to a list.
-# Examples:
-#   Line:
-#     No-Permission: '{prefix}&cYou do not have permission to use that command.'
-#   List:
-#     No-Permission:
-#       - '{prefix}&cYou do not have permission'
-#       - '&cto use that command. Please try another.'
 player:
-  no-permission: '{prefix}&7You do not have permission to use that command.'
-  no-permission-to-claim: '{prefix}&7You do not have permission to claim that envoy.'
+  no-permission: "{prefix}&7Bạn không có quyền dùng command này."
+  no-permission-to-claim: "{prefix}&7Bạn không có quyền claim envoy đó."
+
 envoys:
-  already-started: '{prefix}&7There is already an envoy event running. Please stop
-    it to start a new one.'
-  force-start: '{prefix}&7You have just started the envoy.'
-  not-started: '{prefix}&7There is no envoy event going on at this time.'
-  force-ended: '{prefix}&7You have just ended the envoy.'
-  warning: '{prefix}&7There is an envoy event happening in &f{time}&7.'
+  already-started: "{prefix}&7Đang có envoy event chạy. Vui lòng stop để bắt đầu mới."
+  force-start: "{prefix}&7Bạn vừa bắt đầu envoy."
+  not-started: "{prefix}&7Hiện không có envoy event nào diễn ra."
+  force-ended: "{prefix}&7Bạn vừa kết thúc envoy."
+  warning: "{prefix}&7Envoy event sẽ diễn ra sau &f{time}&7."
   started:
     list:
-    - '{prefix}&7An envoy event has just started. &6{amount} &7crates have spawned
-      around spawn for 5m.'
-  left: '{prefix}&f{player} &7has just found a {tier} envoy. There are now &f{amount}
-    &7left to find.'
-  ended: '{prefix}&7The envoy event has ended. Thanks for playing and please come
-    back for the next one.'
-  not-enough-players: '{prefix}&7Not enough players are online to start the envoy
-    event. Only &f{amount} &7players are online.'
-  enter-editor-mode: '{prefix}&7You are now in editor mode.'
-  leave-editor-mode: '{prefix}&7You have now left editor mode.'
-  editor-clear-locations: '{prefix}&7You have cleared all the editor spawn locations.'
-  editor-clear-failure: '{prefix}&7You must be in Editor mode to clear the spawn locations.'
-  kicked-from-editor-mode: '{prefix}&7Sorry but an envoy is active. Please stop it
-    or wait till it''s over.'
-  add-location: '{prefix}&7You have just added a spawn location.'
-  remove-location: '{prefix}&7You have just removed a spawn location.'
-  time-left: '{prefix}&7The current envoy has &f{time}&7 left.'
-  time-till-event: '{prefix}&7The next envoy will start in &f{time}&7.'
+      - "{prefix}&7Envoy event vừa bắt đầu. &6{amount} &7crate đã spawn quanh spawn trong 5 phút."
+  left: "{prefix}&f{player} &7vừa tìm thấy {tier} envoy. Còn lại &f{amount} &7crate để tìm."
+  ended: "{prefix}&7Envoy event đã kết thúc. Cảm ơn đã tham gia, hẹn gặp lại lần sau."
+  not-enough-players: "{prefix}&7Không đủ player online để bắt đầu envoy event. Chỉ có &f{amount} &7player online."
+  enter-editor-mode: "{prefix}&7Bạn đang ở editor mode."
+  leave-editor-mode: "{prefix}&7Bạn đã thoát editor mode."
+  editor-clear-locations: "{prefix}&7Bạn đã xóa tất cả spawn location trong editor."
+  editor-clear-failure: "{prefix}&7Phải ở editor mode để xóa spawn location."
+  kicked-from-editor-mode: "{prefix}&7Xin lỗi, envoy đang active. Vui lòng stop hoặc đợi đến khi kết thúc."
+  add-location: "{prefix}&7Bạn vừa thêm một spawn location."
+  remove-location: "{prefix}&7Bạn vừa xóa một spawn location."
+  time-left: "{prefix}&7Envoy hiện tại còn &f{time}&7."
+  time-till-event: "{prefix}&7Envoy tiếp theo sẽ bắt đầu sau &f{time}&7."
   flare:
-    used-flare: '{prefix}&7You have just started an envoy event with a flare.'
-    cant-use-flares: '{prefix}&7You do not have permission to use flares.'
-    sent-flare: '{prefix}&7You have just given &f{player} {amount} &7flares.'
-    received-flare: '{prefix}&7You have been given &f{amount} &7flares.'
-  new-center: '{prefix}&7You have just set a new center for the random envoy crates.'
-  not-in-world-guard-region: '{prefix}&7You must be in the WarZone to use a flare.'
-  start-ignoring-messages: '{prefix}&7You are now ignoring the collecting messages.'
-  stop-ignoring-messages: '{prefix}&7You now see all the collecting messages.'
-  cooldown-left: '{prefix}&7You still have &f{time} &7till you can collect another
-    crate.'
-  countdown-in-progress: '{prefix}&7You cannot claim any envoys for another &6{time}
-    seconds.'
-  drops-available: '{prefix}&7List of all available envoys.'
-  drops-possibilities: '{prefix}&7List of location envoy''''s may spawn at.'
-  drops-page: '{prefix}&7Use /envoy drops [page] to see more.'
-  drops-format: '&7[&6{id}&7]: {world}, {x}, {y}, {z}'
-  no-spawn-locations-found: '{prefix}&7No spawn locations were found and so the event
-    has been cancelled and the cooldown has been reset.'
+    used-flare: "{prefix}&7Bạn vừa dùng flare để bắt đầu envoy event."
+    cant-use-flares: "{prefix}&7Bạn không có quyền dùng flare."
+    sent-flare: "{prefix}&7Bạn vừa gửi &f{player} {amount} &7flare."
+    received-flare: "{prefix}&7Bạn nhận được &f{amount} &7flare."
+  new-center: "{prefix}&7Bạn vừa đặt center mới cho random envoy crate."
+  not-in-world-guard-region: "{prefix}&7Phải ở WarZone để dùng flare."
+  start-ignoring-messages: "{prefix}&7Bạn đang bỏ qua message collect envoy."
+  stop-ignoring-messages: "{prefix}&7Bạn đã bật lại message collect envoy."
+  cooldown-left: "{prefix}&7Bạn còn &f{time} &7để collect crate khác."
+  countdown-in-progress: "{prefix}&7Bạn không thể claim envoy trong &6{time} giây nữa."
+  drops-available: "{prefix}&7Danh sách tất cả envoy hiện có."
+  drops-possibilities: "{prefix}&7Danh sách location envoy có thể spawn."
+  drops-page: "{prefix}&7Dùng /envoy drops [page] để xem thêm."
+  drops-format: "&7[&6{id}&7]: {world}, {x}, {y}, {z}"
+  no-spawn-locations-found: "{prefix}&7Không tìm thấy spawn location, event bị hủy và cooldown đã reset."
   hologram-placeholders:
-    on-going: On Going
-    not-running: Not Running
+    on-going: Đang diễn ra
+    not-running: Không chạy
   time-placeholders:
-    day: d
-    hour: h
-    minute: m
-    second: s
-  envoy-locations: "&e&lAll Envoy Locations: \n&c[ID], [World]: [X], [Y], [Z] &r{locations}"
-  location-format: '
+    day: ngày
+    hour: giờ
+    minute: phút
+    second: giây
+  envoy-locations: "&e&lTất cả Envoy Location: \n&c[ID], [World]: [X], [Y], [Z] &r{locations}"
+  location-format: "&8[&3{id}&8] &c{world}: {x}, {y}, {z}"
 
-    &8[&3{id}&8] &c{world}: {x}, {y}, {z}'
 misc:
-  command-not-found: '{prefix}&7Please do /envoy help for more information.'
-  player-only: '{prefix}&7Only players can use that command.'
-  not-online: '{prefix}&7That player is not online at this time.'
-  not-a-number: '{prefix}&7That is not a number.'
-  config-reload: '{prefix}&7You have just reloaded all the files.'
+  command-not-found: "{prefix}&7Vui lòng dùng /envoy help để biết thêm."
+  player-only: "{prefix}&7Chỉ player mới dùng được command này."
+  not-online: "{prefix}&7Player đó hiện không online."
+  not-a-number: "{prefix}&7Đó không phải số."
+  config-reload: "{prefix}&7Bạn vừa reload tất cả file."
   help:
-  - '&f/envoy help &7- Shows the envoy help menu.'
-  - '&f/envoy reload &7- Reloads all the config files.'
-  - '&f/envoy time &7- Shows the time till the envoy starts or ends.'
-  - '&f/envoy drops [page] &7- Shows all current crate locations.'
-  - '&f/envoy ignore &7- Shuts up the envoy collecting message.'
-  - '&f/envoy flare [amount] [player] &7- Give a player a flare to call an envoy event.'
-  - '&f/envoy edit &7- Edit the crate locations with bedrock.'
-  - '&f/envoy start &7- Force starts the envoy.'
-  - '&f/envoy stop &7- Force stops the envoy.'
-  - '&f/envoy center &7- Set the center of the random crate drops.'
+    - "&f/envoy help &7- Hiển thị menu help envoy."
+    - "&f/envoy reload &7- Reload tất cả file config."
+    - "&f/envoy time &7- Xem thời gian đến khi envoy bắt đầu hoặc kết thúc."
+    - "&f/envoy drops [page] &7- Xem tất cả location crate hiện tại."
+    - "&f/envoy ignore &7- Tắt message collect envoy."
+    - "&f/envoy flare [amount] [player] &7- Tặng player flare để gọi envoy event."
+    - "&f/envoy edit &7- Chỉnh sửa location crate bằng bedrock."
+    - "&f/envoy start &7- Ép bắt đầu envoy."
+    - "&f/envoy stop &7- Ép dừng envoy."
+    - "&f/envoy center &7- Đặt center cho random crate drop."

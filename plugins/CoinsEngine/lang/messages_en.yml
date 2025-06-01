@@ -1,75 +1,75 @@
 Command:
   Migrate:
-    Desc: Migrate data from other plugin(s).
+    Desc: Chuyển dữ liệu từ plugin khác.
     Usage: <plugin> <currency>
     Error:
-      Plugin: <light_gray>Plugin is not supported or installed!</light_gray>
-    Start: <light_yellow>Started data migration from the <light_orange>%name%</light_orange>! This may take a while.</light_yellow>
-    Done: <light_yellow>Migrated data from the <light_orange>%name%</light_orange>!</light_yellow>
+      Plugin: <light_gray>Plugin không được hỗ trợ hoặc chưa cài!</light_gray>
+    Start: <light_yellow>Bắt đầu chuyển dữ liệu từ <light_orange>%name%</light_orange>! Có thể mất chút thời gian.</light_yellow>
+    Done: <light_yellow>Đã chuyển dữ liệu từ <light_orange>%name%</light_orange>!</light_yellow>
   Reset:
-    Desc: Reset player's balances.
+    Desc: Reset số dư của player.
     Usage: <player>
-    Done: <light_yellow>Reset all currency balances for <light_orange>%player_name%</light_orange>!</light_yellow>
+    Done: <light_yellow>Đã reset tất cả số dư currency cho <light_orange>%player_name%</light_orange>!</light_yellow>
   Wipe:
-    Desc: Reset all currencies for all users.
+    Desc: Reset tất cả currency cho mọi người dùng.
     Usage: <currency>
-    Start: <light_yellow>Started currency data wipe for <light_orange>%currency_name%</light_orange>. This may take a while...</light_yellow>
-    Finish: <light_yellow>Finished currency data wipe for <light_orange>%currency_name%</light_orange>.</light_yellow>
+    Start: <light_yellow>Bắt đầu xóa dữ liệu currency <light_orange>%currency_name%</light_orange>. Có thể mất chút thời gian...</light_yellow>
+    Finish: <light_yellow>Hoàn tất xóa dữ liệu currency <light_orange>%currency_name%</light_orange>.</light_yellow>
   Currency:
     Balance:
-      Usage: '[player]'
-      Desc: Check [player's] currency balance.
+      Usage: "[player]"
+      Desc: Kiểm tra số dư currency [của player].
     Give:
       Usage: <player> <amount> [-s]
-      Desc: Add currency to a player.
+      Desc: Thêm currency cho player.
       Done: <output:"none">
       Notify: <output:"none">
     Take:
       Usage: <player> <amount> [-s]
-      Desc: Take player's currency.
+      Desc: Lấy currency của player.
       Done: <output:"none">
       Notify: <output:"none">
     Set:
       Usage: <player> <amount> [-s]
-      Desc: Set player's currency balance.
+      Desc: Đặt số dư currency của player.
       Done: <output:"none">
       Notify: <output:"none">
     Send:
       Usage: <player> <amount>
-      Desc: Transfer currency to a player.
+      Desc: Chuyển currency cho player.
       Error:
-        NotEnough: <light_yellow>You don't have enough <light_red>%currency_name%</light_red>!</light_yellow>
-        TooLow: <light_yellow>You can not send smaller than <light_red>%amount%</light_red>!</light_yellow>
-        NoPayments: <light_yellow><light_red>%player_name%</light_red> does not accept <light_red>%currency_name%</light_red>!</light_yellow>
+        NotEnough: <light_yellow>Bạn không đủ <light_red>%currency_name%</light_red>!</light_yellow>
+        TooLow: <light_yellow>Không thể gửi nhỏ hơn <light_red>%amount%</light_red>!</light_yellow>
+        NoPayments: <light_yellow><light_red>%player_name%</light_red> không chấp nhận <light_red>%currency_name%</light_red>!</light_yellow>
       Done:
-        Sender: <light_yellow>You sent <light_orange>%amount%</light_orange> to <light_orange>%player_name%</light_orange>!</light_yellow>
-        Notify: <light_yellow>You received <light_orange>%amount%</light_orange> from <light_orange>%player_name%</light_orange>!</light_yellow>
+        Sender: <light_yellow>Bạn đã gửi <light_orange>%amount%</light_orange> cho <light_orange>%player_name%</light_orange>!</light_yellow>
+        Notify: <light_yellow>Bạn nhận được <light_orange>%amount%</light_orange> từ <light_orange>%player_name%</light_orange>!</light_yellow>
     Payments:
-      Usage: '[player] [-s]'
-      Desc: Toggle payments acception from other players.
-      Toggle: '<light_yellow><light_orange>%currency_name%</light_orange> payments acception: <light_orange>%state%</light_orange>.</light_yellow>'
-      Target: '<light_yellow><light_orange>%currency_name%</light_orange> payments acception for <light_orange>%player_name%</light_orange>: <light_orange>%state%</light_orange>.</light_yellow>'
+      Usage: "[player] [-s]"
+      Desc: Bật/tắt chấp nhận payments từ player khác.
+      Toggle: "<light_yellow>Chấp nhận payments <light_orange>%currency_name%</light_orange>: <light_orange>%state%</light_orange>.</light_yellow>"
+      Target: "<light_yellow>Chấp nhận payments <light_orange>%currency_name%</light_orange> cho <light_orange>%player_name%</light_orange>: <light_orange>%state%</light_orange>.</light_yellow>"
     Exchange:
       Usage: <currency> <amount>
-      Desc: Exchange currency.
+      Desc: Đổi currency.
     Top:
-      Usage: '[page]'
-      Desc: List of players with the most balance.
+      Usage: "[page]"
+      Desc: Danh sách player có số dư cao nhất.
       List:
-      - <noprefix>
-      - <cyan><b>%currency_name% Top:</b></cyan>
-      - ' '
-      - '%entry%'
-      - ' '
-      - ''
-      - <light_gray>Page <cyan>%current%</cyan> of <cyan>%max%</cyan>.</light_gray>
-      - ' '
-      Entry: '<cyan>%pos%. <gray>%player_name%: </gray>%balance%</cyan>'
+        - <noprefix>
+        - <cyan><b>%currency_name% Top:</b></cyan>
+        - " "
+        - "%entry%"
+        - " "
+        - ""
+        - <light_gray>Page <cyan>%current%</cyan> / <cyan>%max%</cyan>.</light_gray>
+        - " "
+      Entry: "<cyan>%pos%. <gray>%player_name%: </gray>%balance%</cyan>"
     Root:
-      Desc: '%currency_name% currency commands.'
+      Desc: "Commands currency %currency_name%."
     GiveAll:
-      Desc: Add currency to all online players.
-      Done: <lgray>Added <lyellow>%amount%</lyellow> to <lyellow>All Online</lyellow> players.</lgray>
+      Desc: Thêm currency cho tất cả player online.
+      Done: <lgray>Đã thêm <lyellow>%amount%</lyellow> cho <lyellow>tất cả player online</lyellow>.</lgray>
   Argument:
     Name:
       Currency: currency
@@ -78,19 +78,19 @@ Command:
 Currency:
   Balance:
     Display:
-      Own: '<light_yellow>Balance: <light_orange>%balance%</light_orange>.</light_yellow>'
-      Others: '<light_yellow><light_orange>%player_name%</light_orange>''s balance: <light_orange>%balance%</light_orange>.</light_yellow>'
+      Own: "<light_yellow>Số dư: <light_orange>%balance%</light_orange>.</light_yellow>"
+      Others: "<light_yellow>Số dư của <light_orange>%player_name%</light_orange>: <light_orange>%balance%</light_orange>.</light_yellow>"
   Exchange:
     Error:
-      Disabled: <light_yellow><light_red>%currency_name%</light_red> can not be exchanged!</light_yellow>
-      NoRate: <light_yellow><light_red>%currency_name%</light_red> can not be exchanged for <light_red>%name%</light_red>!</light_yellow>
-      LowAmount: <light_yellow><light_red>%currency_name%</light_red> amount is too low for exchange!</light_yellow>
-      LowBalance: <light_yellow>You don't have <light_red>%amount%</light_red> for exchange!</light_yellow>
-      LimitExceed: <lgray>You could get <lred>%amount%</lred>, but you can't hold more than <lred>%max%</lred> total!</lgray>
-    Success: <light_yellow>You exchanged <light_orange>%balance%</light_orange> for <light_orange>%amount%</light_orange>!</light_yellow>
+      Disabled: <light_yellow><light_red>%currency_name%</light_red> không thể exchange!</light_yellow>
+      NoRate: <light_yellow><light_red>%currency_name%</light_red> không thể exchange sang <light_red>%name%</light_red>!</light_yellow>
+      LowAmount: <light_yellow>Số lượng <light_red>%currency_name%</light_red> quá thấp để exchange!</light_yellow>
+      LowBalance: <light_yellow>Bạn không có <light_red>%amount%</light_red> để exchange!</light_yellow>
+      LimitExceed: <lgray>Bạn có thể nhận <lred>%amount%</lred>, nhưng không thể giữ quá <lred>%max%</lred>!</lgray>
+    Success: <light_yellow>Bạn đã exchange <light_orange>%balance%</light_orange> lấy <light_orange>%amount%</light_orange>!</light_yellow>
   Error:
-    Invalid: <light_red>Invalid currency!</light_red>
+    Invalid: <light_red>Currency không hợp lệ!</light_red>
 VaultEconomy:
   Error:
-    InvalidPlayer: Player not found.
-    InsufficientFunds: Insufficient Funds!
+    InvalidPlayer: Player không tìm thấy.
+    InsufficientFunds: Không đủ tiền!

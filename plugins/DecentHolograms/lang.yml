@@ -1,89 +1,93 @@
-prefix: '&8[&3DecentHolograms&8] &7'
-no_perm: '{prefix}&cYou are not allowed to use this.'
-only_player: '{prefix}&cThis action can only be executed by player.'
-reloaded: '{prefix}&aSuccessfully reloaded in %1$d ms!'
+prefix: "&8[&3DecentHolograms&8] &7"
+no_perm: "{prefix}&cBạn không được phép sử dụng."
+only_player: "{prefix}&cHành động này chỉ dành cho player."
+reloaded: "{prefix}&aReload thành công trong %1$d ms!"
+
 command:
-  use_help: '{prefix}Use &b/holograms help&7 to view possible commands.'
-  usage: '{prefix}Usage: &b%1$s'
-  unknown_sub_command: '{prefix}Unknown sub command.'
+  use_help: "{prefix}Dùng &b/holograms help&7 để xem các command."
+  usage: "{prefix}Cách dùng: &b%1$s"
+  unknown_sub_command: "{prefix}Sub command không tồn tại."
+
 hologram:
-  does_not_exist: '{prefix}&cHologram with that name doesn''t exist.'
-  already_exists: '{prefix}&cHologram with that name already exists.'
-  invalid_name: '{prefix}&cInvalid name ''%1$s'', only use alphanumerical characters,
-    underscore and dash.'
-  created: '{prefix}Hologram has been created!'
-  cloned: '{prefix}Hologram has been cloned!'
-  deleted: '{prefix}Hologram has been deleted!'
-  updated: '{prefix}Hologram has been updated!'
-  renamed: '{prefix}Hologram has been renamed! &7(&b%1$s&7 -> &b%2$s&7)'
-  teleported: '{prefix}Teleported!'
-  moved: '{prefix}Hologram has been moved!'
-  aligned: '{prefix}Hologram has been aligned!'
-  align_self: '{prefix}Cannot align a Hologram to itself!'
-  align_axis: '{prefix}That axis does not exist!'
-  down_origin_set: '{prefix}Origin has been set to &b''%1$s''&7!'
-  down_origin_does_not_exist: '{prefix}Down origin value must be either true or false!'
-  always_face_player_set: '{prefix}Always Face Player has been set to &b''%1$s''&7!'
-  always_face_player_does_not_exist: '{prefix}Always Face Player value must be either
-    true or false!'
-  facing_set: '{prefix}Facing has been set!'
-  flag_add: '{prefix}Flag &b"%1$s"&7 has been added!'
-  flag_remove: '{prefix}Flag &b"%1$s"&7 has been removed!'
-  permission_set: '{prefix}Permission has been set!'
-  permission_removed: '{prefix}Permission has been removed!'
-  display_range_set: '{prefix}Display range has been set!'
-  update_range_set: '{prefix}Update range has been set!'
-  update_interval_set: '{prefix}Update interval has been set!'
-  disabled: '{prefix}Hologram has been disabled!'
-  already_disabled: '{prefix}Hologram is already disabled!'
-  enabled: '{prefix}Hologram has been enabled!'
-  already_enabled: '{prefix}Hologram is already enabled!'
-  save_failed: '{prefix}&cHologram could not be saved. Check the console for errors!'
+  does_not_exist: "{prefix}&cHologram với tên đó không tồn tại."
+  already_exists: "{prefix}&cHologram với tên đó đã tồn tại."
+  invalid_name: "{prefix}&cTên '%1$s' không hợp lệ, chỉ dùng ký tự chữ số, gạch dưới và gạch ngang."
+  created: "{prefix}Hologram đã được tạo!"
+  cloned: "{prefix}Hologram đã được clone!"
+  deleted: "{prefix}Hologram đã bị xóa!"
+  updated: "{prefix}Hologram đã được cập nhật!"
+  renamed: "{prefix}Hologram đã được đổi tên! &7(&b%1$s&7 -> &b%2$s&7)"
+  teleported: "{prefix}Đã teleport!"
+  moved: "{prefix}Hologram đã được di chuyển!"
+  aligned: "{prefix}Hologram đã được căn chỉnh!"
+  align_self: "{prefix}Không thể căn chỉnh Hologram với chính nó!"
+  align_axis: "{prefix}Trục đó không tồn tại!"
+  down_origin_set: "{prefix}Origin đã được đặt thành &b'%1$s'&7!"
+  down_origin_does_not_exist: "{prefix}Giá trị Down Origin phải là true hoặc false!"
+  always_face_player_set: "{prefix}Always Face Player đã được đặt thành &b'%1$s'&7!"
+  always_face_player_does_not_exist: "{prefix}Giá trị Always Face Player phải là true hoặc false!"
+  facing_set: "{prefix}Facing đã được đặt!"
+  flag_add: '{prefix}Flag &b"%1$s"&7 đã được thêm!'
+  flag_remove: '{prefix}Flag &b"%1$s"&7 đã bị xóa!'
+  permission_set: "{prefix}Permission đã được đặt!"
+  permission_removed: "{prefix}Permission đã bị xóa!"
+  display_range_set: "{prefix}Display range đã được đặt!"
+  update_range_set: "{prefix}Update range đã được đặt!"
+  update_interval_set: "{prefix}Update interval đã được đặt!"
+  disabled: "{prefix}Hologram đã bị disable!"
+  already_disabled: "{prefix}Hologram đã disable rồi!"
+  enabled: "{prefix}Hologram đã được enable!"
+  already_enabled: "{prefix}Hologram đã enable rồi!"
+  save_failed: "{prefix}&cKhông thể lưu Hologram. Kiểm tra console để xem lỗi!"
+
 page:
-  added: '{prefix}Page has been added!'
-  add_failed: '{prefix}Page has been added!'
-  inserted: '{prefix}Page has been inserted!'
-  insert_failed: '{prefix}Page has been inserted!'
-  deleted: '{prefix}Page has been deleted!'
-  swapped: '{prefix}Pages swapped!'
-  swap_self: '{prefix}&cCannot swap a page with itself!'
-  swap_failed: '{prefix}&cFailed to swap pages.'
-  does_not_exist: '{prefix}&cThat page doesn''t exist.'
+  added: "{prefix}Page đã được thêm!"
+  add_failed: "{prefix}&cThêm page thất bại!"
+  inserted: "{prefix}Page đã được chèn!"
+  insert_failed: "{prefix}&cChèn page thất bại!"
+  deleted: "{prefix}Page đã bị xóa!"
+  swapped: "{prefix}Đã swap page!"
+  swap_self: "{prefix}&cKhông thể swap page với chính nó!"
+  swap_failed: "{prefix}&cSwap page thất bại."
+  does_not_exist: "{prefix}&cPage đó không tồn tại."
+
 action:
-  click_type_does_not_exist: '{prefix}&cThat click type doesn''t exist.'
-  does_not_exist: '{prefix}&cThat action doesn''t exist.'
-  added: '{prefix}Action has been added.'
-  removed: '{prefix}Action has been removed.'
-  cleared: '{prefix}Actions have been cleared.'
-  no_actions: '{prefix}There are no actions set on that click type.'
+  click_type_does_not_exist: "{prefix}&cClick type đó không tồn tại."
+  does_not_exist: "{prefix}&cAction đó không tồn tại."
+  added: "{prefix}Action đã được thêm."
+  removed: "{prefix}Action đã bị xóa."
+  cleared: "{prefix}Đã xóa tất cả action."
+  no_actions: "{prefix}Không có action nào được đặt cho click type đó."
+
 line:
-  added: '{prefix}Line has been added!'
-  add_failed: '{prefix}&cFailed to add line.'
-  set: '{prefix}Line has been set!'
-  edit: '{prefix}&a&l&nClick to edit the line!'
-  edit_hover: '&r%1$s'
-  inserted: '{prefix}Line has been inserted!'
-  insert_failed: '{prefix}&cFailed to insert line.'
-  removed: '{prefix}Line has been removed!'
-  swapped: '{prefix}Lines has been swapped!'
-  swap_self: '{prefix}&cCannot swap a line with itself!'
-  swap_failed: '{prefix}&cFailed to swap lines.'
-  aligned: '{prefix}Line has been aligned!'
-  align_self: '{prefix}Cannot align a Line to itself!'
-  align_axis: '{prefix}That axis does not exist!'
-  height_set: '{prefix}Line height has been set!'
-  offsetx_set: '{prefix}Line OffsetX has been set!'
-  offsetz_set: '{prefix}Line OffsetZ has been set!'
-  flag_added: '{prefix}Flag &b"%1$s"&7 has been added!'
-  flag_removed: '{prefix}Flag &b"%1$s"&7 has been removed!'
-  does_not_exist: '{prefix}&cThat line doesn''t exist.'
-  permission_set: '{prefix}Permission has been set!'
-  permission_removed: '{prefix}Permission has been removed!'
-  facing_set: '{prefix}Facing has been set!'
+  added: "{prefix}Line đã được thêm!"
+  add_failed: "{prefix}&cThêm line thất bại."
+  set: "{prefix}Line đã được đặt!"
+  edit: "{prefix}&a&l&nClick để edit line!"
+  edit_hover: "&r%1$s"
+  inserted: "{prefix}Line đã được chèn!"
+  insert_failed: "{prefix}&cChèn line thất bại."
+  removed: "{prefix}Line đã bị xóa!"
+  swapped: "{prefix}Đã swap line!"
+  swap_self: "{prefix}&cKhông thể swap line với chính nó!"
+  swap_failed: "{prefix}&cSwap line thất bại."
+  aligned: "{prefix}Line đã được căn chỉnh!"
+  align_self: "{prefix}Không thể căn chỉnh Line với chính nó!"
+  align_axis: "{prefix}Trục đó không tồn tại!"
+  height_set: "{prefix}Line height đã được đặt!"
+  offsetx_set: "{prefix}Line OffsetX đã được đặt!"
+  offsetz_set: "{prefix}Line OffsetZ đã được đặt!"
+  flag_added: '{prefix}Flag &b"%1$s"&7 đã được thêm!'
+  flag_removed: '{prefix}Flag &b"%1$s"&7 đã bị xóa!'
+  does_not_exist: "{prefix}&cLine đó không tồn tại."
+  permission_set: "{prefix}Permission đã được đặt!"
+  permission_removed: "{prefix}Permission đã bị xóa!"
+  facing_set: "{prefix}Facing đã được đặt!"
+
 feature:
-  does_not_exist: '{prefix}&cFeature "%1$s" does not exist.'
-  enabled: '{prefix}Feature &b"%1$s"&7 has been enabled!'
-  already_enabled: '{prefix}&cFeature "%1$s" is already enabled!'
-  disabled: '{prefix}Feature &b"%1$s"&7 has been disabled!'
-  already_disabled: '{prefix}&cFeature "%1$s" is already disabled!'
-  reloaded: '{prefix}Feature &b"%1$s"&7 has been reloaded!'
+  does_not_exist: '{prefix}&cFeature "%1$s" không tồn tại.'
+  enabled: '{prefix}Feature &b"%1$s"&7 đã được enable!'
+  already_enabled: '{prefix}&cFeature "%1$s" đã enable rồi!'
+  disabled: '{prefix}Feature &b"%1$s"&7 đã bị disable!'
+  already_disabled: '{prefix}&cFeature "%1$s" đã disable rồi!'
+  reloaded: '{prefix}Feature &b"%1$s"&7 đã được reload!'

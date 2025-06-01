@@ -1,0 +1,88 @@
+## Thông tin bổ sung:
+## Đây là file ngôn ngữ mặc định cho BlueSlimeCore.
+## Ngôn ngữ mặc định là "en_us", tức là tiếng Anh (Hoa Kỳ).
+## Ngữ cảnh cho người dịch sẽ được thêm dưới dạng comment YAML phía trên chuỗi.
+
+## Màu sắc cho các thông báo là trắng, xanh lá, và đỏ.
+## Phản hồi lệnh thành công luôn phải màu xanh lá.
+## Thông báo lỗi luôn phải màu đỏ.
+## Các biến trong thông báo có thể màu xanh lá hoặc vàng.
+
+## Thông báo sử dụng định dạng MiniMessage ở chế độ không nghiêm ngặt.
+## Thông tin thêm về MiniMessage có thể tìm thấy tại đây:
+## https://docs.adventure.kyori.net/minimessage/format.html
+
+---
+language-name: "vi_vn"
+decimal-format: "0.00"
+
+language-test:
+  invalid-language: "<red>Đối tượng không có ngôn ngữ hợp lệ.</red>"
+  language-code: "<green>Mã ngôn ngữ: <gray>{language_code}</gray></green>"
+  java-locale: "<green>Định dạng Java: <gray>{java_locale}</gray></green>"
+  message: "<green>Kiểm tra thông báo</green>"
+  broadcast: "<bold><green>Kiểm tra phát thông báo</green></bold>"
+  action-bar: "<green>Kiểm tra thanh hành động</green>"
+  sound:
+    sound: "minecraft:block.beacon.activate"
+    category: "master"
+    volume: 1.0
+    pitch: 1.0
+  title:
+    title: "<green>Kiểm tra tiêu đề</green>"
+    subtitle: "<green>Kiểm tra phụ đề</green>"
+    fade-in: 20
+    stay: 20
+    fade-out: 20
+  complete: "<green>Đã hoàn tất kiểm tra ngôn ngữ.</green>"
+
+error:
+  player-only: "<red>Lệnh này chỉ có thể được thực hiện bởi người chơi.</red>"
+  console-only: "<red>Lệnh này chỉ có thể được thực hiện trong console server.</red>"
+  invalid-held-item: "<red>Bạn phải cầm một vật phẩm hợp lệ để sử dụng lệnh này.</red>"
+  invalid-world: "<red>Bạn phải ở trong một thế giới hợp lệ để thực hiện lệnh này.</red>"
+  world-required: "<red>Server phải có ít nhất một thế giới để sử dụng lệnh này.</red>"
+  no-permission: "<red>Thiếu quyền: <gray>{permission}</gray>.</red>"
+  invalid-target: "<red><gray>{target}</gray> không trực tuyến hoặc không tồn tại.</red>"
+
+command:
+  global-gamerule:
+    unknown-gamerule: "<red>Loại luật game không xác định <gray>{value}</gray>.</red>"
+    list-title: "<white><bold>Giá trị luật game cho <gray>{rule}</gray>:</bold></white>"
+    list-line-format: "<gray><bold>{world}:</bold></gray> <white>{value}</white>"
+    success-count: "<green>Đã thay đổi thành công luật game <gray>{rule}</gray> thành giá trị <gray>{value}</gray> trong <gray>{count}</gray> thế giới.</green>"
+    failure-count: "<red>Không thể thay đổi luật game <gray>{rule}</gray> trong <gray>{count}</gray> thế giới.</red>"
+
+  debug-event:
+    invalid-priority: "<red>Loại ưu tiên sự kiện không xác định <gray>{value}</gray>.</red>"
+    invalid-event-class: "<red>Lớp sự kiện không xác định hoặc không hợp lệ <gray>{value}</gray>.</red>"
+    reflection-error: "<red>Không thể gỡ lỗi sự kiện đó. Xem console server để biết lỗi.</red>"
+    results-title: "<white>Kết quả gỡ lỗi cho sự kiện <gray>{event}</gray> và ưu tiên <gray>{priority}</gray>:</white>"
+    results-none: "<red>Sự kiện <gray>{event}</gray> không có trình lắng nghe nào với ưu tiên <gray>{priority}</gray>.</red>"
+
+  blueslimecore:
+    help:
+      title: "<white><bold>Lệnh BlueSlimeCore:</bold></white>"
+      command-list:
+        - "<aqua>/bscore help</aqua><gray>: Hiển thị danh sách lệnh này.</gray>"
+        - "<aqua>/bscore reload</aqua><gray>: Tải lại các file cấu hình cho BlueSlimeCore.</gray>"
+        - "<aqua>/bscore language-test [người chơi]</aqua><gray>: Gửi thông báo kiểm tra ngôn ngữ.</gray>"
+        - "<aqua>/debug-event</aqua><gray>: Hiển thị thông tin về các lớp đang lắng nghe một sự kiện (chỉ trong console).</gray>"
+        - "<aqua>/global-gamerule</aqua><gray>: Thay đổi luật game cho mọi thế giới trên server.</gray>"
+        - "<aqua>/item-info</aqua><gray>: Hiển thị thông tin về vật liệu và độ bền của một vật phẩm.</gray>"
+        - "<aqua>/item-to-base64</aqua><gray>: Chuyển đổi vật phẩm thành chuỗi base64 nhị phân.</gray>"
+        - "<aqua>/item-to-nbt</aqua><gray>: Chuyển đổi vật phẩm thành định dạng NBT.</gray>"
+        - "<aqua>/item-to-yml</aqua><gray>: Chuyển đổi vật phẩm thành định dạng YAML tuần tự hóa của Bukkit.</gray>"
+        - ""
+    reload-success: "<green>Đã tải lại file cấu hình thành công</green>"
+
+  item-info:
+    modern:
+      - ""
+      - "<white><bold>XMaterial:</bold></aqua> <gray>{xmaterial}</gray>"
+      - "<white><bold>Vật liệu Bukkit:</bold></aqua> <gray>{material}</gray>"
+      - "<white><bold>ID Vanilla:</bold></aqua> <gray>{vanilla}</gray>"
+    legacy:
+      - ""
+      - "<aqua><bold>ID lỗi thời:</bold></aqua> <gray>{material_id}</gray>"
+      - "<aqua><bold>Dữ liệu lỗi thời:</bold></aqua> <gray>{data}</gray>"

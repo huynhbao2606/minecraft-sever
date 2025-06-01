@@ -8,8 +8,8 @@ GriefPrevention:
   Claims:
     Mode:
       arena: Disabled
-      playworld: Survival
       spawn: Disabled
+      playworld: Survival
     PreventGlobalMonsterEggs: true
     PreventTheft: true
     ProtectCreatures: true
