@@ -1,0 +1,45 @@
+# Dữ liệu thế giới
+world
+world_nether
+world_the_end
+playworld
+spawn
+arena
+playerdata
+stats
+advancements
+
+# File tạm thời
+logs
+cache
+libraries
+crash-reports
+
+# File dữ liệu plugin
+pluginsdata
+pluginsdatabase.db
+pluginsplayerdata
+pluginsbackups
+pluginscache
+pluginsbStats
+
+# File nhạy cảm
+server.properties
+ops.json
+whitelist.json
+banned-players.json
+banned-ips.json
+eula.txt
+
+# File JAR (server và plugin)
+.jar
+plugins.jar
+
+# File hệ thống
+.DS_Store
+Thumbs.db
+
+# File tạm của IDE hoặc hệ điều hành
+.log
+.tmp
+.bak
