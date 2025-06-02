@@ -1,12 +1,10 @@
-menu_title: '&f七七七七七七七七㊓'
+menu_title: "&f七七七七七七七七㊓"
 open_command: factorieshydrogen
 size: 45
 update_interval: 1
 
 items:
-
-
-  'factories_1_ongoing':
+  "factories_1_ongoing":
     material: PAPER
     model_data: 11069
     slot: 21
@@ -14,16 +12,16 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    display_name: "&6&lĐANG SẢN XUẤT"
     lore:
-      - ''
-      - '&7Your products are currently'
-      - '&7being produces. Return when'
-      - '&7the production is completed.'
-      - ''
-      - '&6Production: &f5x Hydrogen'
-      - ''
-      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factorieshydrogen%'
+      - ""
+      - "&7Sản phẩm của bạn đang"
+      - "&7được sản xuất. Quay lại khi"
+      - "&7sản xuất hoàn tất."
+      - ""
+      - "&6Sản phẩm: &f5x Hydrogen"
+      - ""
+      - "&6Thời gian còn lại: &f%luckperms_inherited_group_expiry_time_factorieshydrogen%"
     priority: 1
     view_requirement:
       minimum_requirements: 2
@@ -35,7 +33,7 @@ items:
           type: "has permission"
           permission: factory.hydrogen.ongoing.1
 
-  'factories_1_completed':
+  "factories_1_completed":
     material: PAPER
     model_data: 11064
     slot: 21
@@ -43,13 +41,13 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    display_name: "&a&lSẢN XUẤT HOÀN TẤT"
     lore:
-      - ''
-      - '&7The production is completed,'
-      - '&7please claim your product.'
-      - ''
-      - '&e➥ Left-Click to claim'
+      - ""
+      - "&7Sản xuất đã hoàn tất,"
+      - "&7vui lòng nhận sản phẩm."
+      - ""
+      - "&e➥ Nhấp trái để nhận"
     priority: 2
     view_requirement:
       minimum_requirements: 2
@@ -64,23 +62,23 @@ items:
       - "[console] lp user %player_name% permission unset factory.hydrogen.started.1"
       - "[console] factoriespongoing take %player_name% 1"
       - "[console] factoriespcompleted give %player_name% 1"
-      - '[console] factories_items hydrogen %player_name% 5'
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[console] factories_items hydrogen %player_name% 5"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã hoàn thành sản xuất này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
 
-  'factories_1_alreadyproducing':
+  "factories_1_alreadyproducing":
     material: BARRIER
     slot: 21
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You already have a production'
-      - '&7ongoing in this factory.'
+      - ""
+      - "&7Bạn đã có một sản xuất"
+      - "&7đang diễn ra trong nhà máy này."
     priority: 3
     view_requirement:
       minimum_requirements: 1
@@ -94,30 +92,30 @@ items:
           permission: factory.hydrogen.started.3
           optional: true
 
-  'factories_1_productionlimit':
+  "factories_1_productionlimit":
     material: BARRIER
     slot: 21
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You have reached your limit for'
-      - '&7ongoing productions. Wait till one'
-      - '&7of your productions is completed.'
-      - ''
-      - '&cYour Limit: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%'
+      - ""
+      - "&7Bạn đã đạt giới hạn"
+      - "&7sản xuất đang diễn ra. Chờ đến khi"
+      - "&7một sản xuất hoàn tất."
+      - ""
+      - "&cGiới hạn của bạn: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%"
     priority: 4
     view_requirement:
       minimum_requirements: 1
       requirements:
         one:
           type: javascript
-          expression: '%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1'
+          expression: "%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1"
 
-  'factories_1_start':
+  "factories_1_start":
     material: PAPER
     model_data: 11069
     slot: 21
@@ -125,24 +123,24 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lʜʏᴅʀᴏɢᴇɴ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪ'
+    display_name: "&6&lSẢN XUẤT HYDROGEN I"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f5x Hydrogen'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f15x Gunpowder'
-      - ' &8&l∙ &f10x Light Blue Dye'
-      - ' &8&l∙ &f3x Gasoline'
-      - ''
-      - '&6Fuel Level: &cGasoline &7(3)'
-      - ''
-      - '&6Production Time: &720m'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f5x Hydrogen"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&l∙ &f15x Gunpowder"
+      - " &8&l∙ &f10x Light Blue Dye"
+      - " &8&l∙ &f3x Gasoline"
+      - ""
+      - "&6Mức nhiên liệu: &cGasoline &7(3)"
+      - ""
+      - "&6Thời gian sản xuất: &720 phút"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 5
     view_requirement:
       minimum_requirements: 2
@@ -161,7 +159,7 @@ items:
       - "[console] minecraft:clear %player_name% gunpowder 15"
       - "[console] minecraft:clear %player_name% light_blue_dye 10"
       - '[console] minecraft:clear %player_name% paper[custom_name=''["",{"text":"Gasoline","italic":false,"color":"red"}]'',custom_model_data=11068] 3'
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã bắt đầu sản xuất!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -180,21 +178,7 @@ items:
           amount: 3
           modeldata: 11068
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  'factories_2_purchase':
+  "factories_2_purchase":
     material: PAPER
     model_data: 11065
     slot: 22
@@ -202,24 +186,24 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lʜʏᴅʀᴏɢᴇɴ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪ'
+    display_name: "&6&lSẢN XUẤT HYDROGEN II"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f10x Hydrogen'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f30x Gunpowder'
-      - ' &8&l∙ &f20x Light Blue Dye'
-      - ' &8&l∙ &f6x Gasoline'
-      - ''
-      - '&6Production Time: &730m'
-      - ''
-      - '&#D85300Purchase Price: &f$4,500,000'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f10x Hydrogen"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8l∙ &f30x Gunpowder"
+      - " &8l∙ &f20x Light Blue Dye"
+      - " &8l∙ &f6x Gasoline"
+      - ""
+      - "&6Thời gian sản xuất: &730 phút"
+      - ""
+      - "&#D85300Giá mua: &f$4,500,000"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 1
     view_requirement:
       requirements:
@@ -229,7 +213,7 @@ items:
     click_commands:
       - "[console] lp user %player_name% permission set factory.purchased.hydrogen.2"
       - "[console] eco take %player_name% 4500000"
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory tier!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã mua cấp độ này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -238,19 +222,19 @@ items:
           type: "has permission"
           permission: factory.research.completed.AccountingI
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn chưa có nghiên cứu cần thiết!"
         permission2:
           type: "!has permission"
           permission: factory.research.ongoing.AccountingI
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn chưa có nghiên cứu cần thiết!"
         money:
           type: has money
           amount: 4500000
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn không đủ tiền!"
 
-  'factories_2_ongoing':
+  "factories_2_ongoing":
     material: PAPER
     model_data: 11069
     slot: 22
@@ -258,16 +242,16 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    display_name: "&6&lĐANG SẢN XUẤT"
     lore:
-      - ''
-      - '&7Your products are currently'
-      - '&7being produces. Return when'
-      - '&7the production is completed.'
-      - ''
-      - '&6Production: &f10x Hydrogen'
-      - ''
-      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factorieshydrogen%'
+      - ""
+      - "&7Sản phẩm của bạn đang"
+      - "&7được sản xuất. Quay lại khi"
+      - "&7sản xuất hoàn tất."
+      - ""
+      - "&6Sản phẩm: &f10x Hydrogen"
+      - ""
+      - "&6Thời gian còn lại: &f%luckperms_inherited_group_expiry_time_factorieshydrogen%"
     priority: 2
     view_requirement:
       minimum_requirements: 2
@@ -279,7 +263,7 @@ items:
           type: "has permission"
           permission: factory.hydrogen.ongoing.2
 
-  'factories_2_completed':
+  "factories_2_completed":
     material: PAPER
     model_data: 11064
     slot: 22
@@ -287,13 +271,13 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    display_name: "&a&lSẢN XUẤT HOÀN TẤT"
     lore:
-      - ''
-      - '&7The production is completed,'
-      - '&7please claim your product.'
-      - ''
-      - '&e➥ Left-Click to claim'
+      - ""
+      - "&7Sản xuất đã hoàn tất,"
+      - "&7vui lòng nhận sản phẩm."
+      - ""
+      - "&e➥ Nhấp trái để nhận"
     priority: 3
     view_requirement:
       minimum_requirements: 2
@@ -308,23 +292,23 @@ items:
       - "[console] lp user %player_name% permission unset factory.hydrogen.started.2"
       - "[console] factoriespongoing take %player_name% 1"
       - "[console] factoriespcompleted give %player_name% 1"
-      - '[console] factories_items hydrogen %player_name% 10'
+      - "[console] factories_items hydrogen %player_name% 10"
       - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
 
-  'factories_2_alreadyproducing':
+  "factories_2_alreadyproducing":
     material: BARRIER
     slot: 22
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You already have a production'
-      - '&7ongoing in this factory.'
+      - ""
+      - "&7Bạn đã có một sản xuất"
+      - "&7đang diễn ra trong nhà máy này."
     priority: 4
     view_requirement:
       minimum_requirements: 1
@@ -335,33 +319,33 @@ items:
           optional: true
         started:
           type: "has permission"
-          permission: factory.hydrogen.started.3
+          permission: factory juntas_progen.3
           optional: true
 
-  'factories_2_productionlimit':
+  "factories_2_productionlimit":
     material: BARRIER
     slot: 22
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You have reached your limit for'
-      - '&7ongoing productions. Wait till one'
-      - '&7of your productions is completed.'
-      - ''
-      - '&cYour Limit: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%'
+      - ""
+      - "&7Bạn đã đạt giới hạn"
+      - "&7sản xuất đang diễn ra. Chờ đến khi"
+      - "&7một sản xuất hoàn tất."
+      - ""
+      - "&cGiới hạn của bạn: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%"
     priority: 5
     view_requirement:
       minimum_requirements: 1
       requirements:
         one:
           type: javascript
-          expression: '%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1'
+          expression: "%minecraft_balance_rounded_factoriesplimit-%minecraft_balance_rounded_factoriespongoing% < 1"
 
-  'factories_2_start':
+  "factories_2_start":
     material: PAPER
     model_data: 11069
     slot: 22
@@ -369,24 +353,24 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lʜʏᴅʀᴏɢᴇɴ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪ'
+    display_name: "&6&lSẢN XUẤT HYDROGEN II"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f10x Hydrogen'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f30x Gunpowder'
-      - ' &8&l∙ &f20x Light Blue Dye'
-      - ' &8&l∙ &f6x Gasoline'
-      - ''
-      - '&6Fuel Level: &cGasoline &7(3)'
-      - ''
-      - '&6Production Time: &730m'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f10x Hydrogen"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&librá &f30x Gunpowder"
+      - " &8&librá &f20x Light Blue Dye"
+      - " &8&librá &f6x Gasoline"
+      - ""
+      - "&6Mức nhiên liệu: &cGasoline &7(3)"
+      - ""
+      - "&6Thời gian sản xuất: &730m"
+      - ""
+      - "&e"
     priority: 6
     view_requirement:
       minimum_requirements: 2
@@ -405,7 +389,7 @@ items:
       - "[console] minecraft:clear %player_name% gunpowder 30"
       - "[console] minecraft:clear %player_name% light_blue_dye 20"
       - '[console] minecraft:clear %player_name% paper[custom_name=''["",{"text":"Gasoline","italic":false,"color":"red"}]'',custom_model_data=11068] 6'
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã bắt đầu sản xuất!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -424,22 +408,7 @@ items:
           amount: 6
           modeldata: 11068
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  'factories_3_purchase':
+  "factories_3_purchase":
     material: PAPER
     model_data: 11065
     slot: 23
@@ -447,24 +416,24 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lʜʏᴅʀᴏɢᴇɴ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪɪ'
+    display_name: "&6&lSẢN XUẤT HYDROGEN III"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f15x Hydrogen'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f50x Gunpowder'
-      - ' &8&l∙ &f35x Light Blue Dye'
-      - ' &8&l∙ &f8x Gasoline'
-      - ''
-      - '&6Production Time: &740m'
-      - ''
-      - '&#D85300Purchase Price: &f$13,500,000'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f15x Hydrogen"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&librá &f50x Gunpowder"
+      - " &8&librá &f35x Light Blue Dye"
+      - " &8&librá &f8x Gasoline"
+      - ""
+      - "&6Thời gian sản xuất: &740 phút"
+      - ""
+      - "&#D85300Giá mua: &f$13,500,000"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 1
     view_requirement:
       requirements:
@@ -474,7 +443,7 @@ items:
     click_commands:
       - "[console] lp user %player_name% permission set factory.purchased.hydrogen.3"
       - "[console] eco take %player_name% 13500000"
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory tier!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã mua cấp độ này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -483,19 +452,19 @@ items:
           type: "has permission"
           permission: factory.research.completed.AccountingII
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn chưa có nghiên cứu cần thiết!"
         permission2:
           type: "!has permission"
           permission: factory.research.ongoing.AccountingII
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn chưa có nghiên cứu cần thiết!"
         money:
           type: has money
           amount: 13500000
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn không đủ tiền!"
 
-  'factories_3_ongoing':
+  "factories_3_ongoing":
     material: PAPER
     model_data: 11069
     slot: 23
@@ -503,16 +472,16 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    display_name: "&6&lĐANG SẢN XUẤT"
     lore:
-      - ''
-      - '&7Your products are currently'
-      - '&7being produces. Return when'
-      - '&7the production is completed.'
-      - ''
-      - '&6Production: &f15x Hydrogen'
-      - ''
-      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factorieshydrogen%'
+      - ""
+      - "&7Sản phẩm của bạn đang"
+      - "&7được sản xuất. Quay lại khi"
+      - "&7sản xuất hoàn tất."
+      - ""
+      - "&6Sản phẩm: &f15x Hydrogen"
+      - ""
+      - "&6Thời gian còn lại: &f%luckperms_inherited_group_expiry_time_factorieshydrogen%"
     priority: 2
     view_requirement:
       minimum_requirements: 2
@@ -524,7 +493,7 @@ items:
           type: "has permission"
           permission: factory.hydrogen.ongoing.3
 
-  'factories_3_completed':
+  "factories_3_completed":
     material: PAPER
     model_data: 11064
     slot: 23
@@ -532,13 +501,13 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    display_name: "&a&lSẢN XUẤT HOÀN TẤT"
     lore:
-      - ''
-      - '&7The production is completed,'
-      - '&7please claim your product.'
-      - ''
-      - '&e➥ Left-Click to claim'
+      - ""
+      - "&7Sản xuất đã hoàn tất,"
+      - "&7vui lòng nhận sản phẩm."
+      - ""
+      - "&e➥ Nhấp trái để nhận"
     priority: 3
     view_requirement:
       minimum_requirements: 2
@@ -553,23 +522,23 @@ items:
       - "[console] lp user %player_name% permission unset factory.hydrogen.started.3"
       - "[console] factoriespongoing take %player_name% 1"
       - "[console] factoriespcompleted give %player_name% 1"
-      - '[console] factories_items hydrogen %player_name% 15'
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[console] factories_items hydrogen %player_name% 15"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã hoàn thành sản xuất này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
 
-  'factories_3_alreadyproducing':
+  "factories_3_alreadyproducing":
     material: BARRIER
     slot: 23
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You already have a production'
-      - '&7ongoing in this factory.'
+      - ""
+      - "&7Bạn đã có một sản xuất"
+      - "&7đang diễn ra trong nhà máy này."
     priority: 4
     view_requirement:
       minimum_requirements: 1
@@ -583,30 +552,30 @@ items:
           permission: factory.hydrogen.started.2
           optional: true
 
-  'factories_3_productionlimit':
+  "factories_3_productionlimit":
     material: BARRIER
     slot: 23
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You have reached your limit for'
-      - '&7ongoing productions. Wait till one'
-      - '&7of your productions is completed.'
-      - ''
-      - '&cYour Limit: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%'
+      - ""
+      - "&7Bạn đã đạt giới hạn"
+      - "&7sản xuất đang diễn ra. Chờ đến khi"
+      - "&7một sản xuất hoàn tất."
+      - ""
+      - "&cGiới hạn của bạn: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%"
     priority: 5
     view_requirement:
       minimum_requirements: 1
       requirements:
         one:
           type: javascript
-          expression: '%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1'
+          expression: "%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1"
 
-  'factories_3_start':
+  "factories_3_start":
     material: PAPER
     model_data: 11069
     slot: 23
@@ -614,24 +583,24 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lʜʏᴅʀᴏɢᴇɴ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪɪ'
+    display_name: "&6&lSẢN XUẤT HYDROGEN III"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f15x Hydrogen'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f50x Gunpowder'
-      - ' &8&l∙ &f35x Light Blue Dye'
-      - ' &8&l∙ &f8x Gasoline'
-      - ''
-      - '&6Fuel Level: &cGasoline &7(3)'
-      - ''
-      - '&6Production Time: &740m'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f15x Hydrogen"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&librá &f50x Gunpowder"
+      - " &8&librá &f35x Light Blue Dye"
+      - " &8&librá &f8x Gasoline"
+      - ""
+      - "&6Mức nhiên liệu: &cGasoline &7(3)"
+      - ""
+      - "&6Thời gian sản xuất: &740 phút"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 6
     view_requirement:
       minimum_requirements: 2
@@ -650,7 +619,7 @@ items:
       - "[console] minecraft:clear %player_name% gunpowder 50"
       - "[console] minecraft:clear %player_name% light_blue_dye 35"
       - '[console] minecraft:clear %player_name% paper[custom_name=''["",{"text":"Gasoline","italic":false,"color":"red"}]'',custom_model_data=11068] 8'
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã bắt đầu sản xuất!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -669,36 +638,7 @@ items:
           amount: 8
           modeldata: 11068
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  'back':
+  "back":
     material: PAPER
     model_data: 110007
     slots:
@@ -709,6 +649,6 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lʙᴀᴄᴋ'
+    display_name: "&c&lQUAY LẠI"
     click_commands:
       - "[openguimenu] factories_menu_hydrogen"

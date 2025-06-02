@@ -1,28 +1,26 @@
-menu_title: '&f七七七七七七七七㊔'
+menu_title: "&f七七七七七七七七㊔"
 open_command: factoriesironingot
 size: 45
 update_interval: 1
 
 items:
-
-
-  'factories_1_ongoing':
+  "factories_1_ongoing":
     material: IRON_INGOT
     slot: 21
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    display_name: "&6&lĐANG SẢN XUẤT"
     lore:
-      - ''
-      - '&7Your products are currently'
-      - '&7being produces. Return when'
-      - '&7the production is completed.'
-      - ''
-      - '&6Production: &f25x Iron Ingot'
-      - ''
-      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factoriesironingot%'
+      - ""
+      - "&7Sản phẩm của bạn đang"
+      - "&7được sản xuất. Quay lại khi"
+      - "&7sản xuất hoàn tất."
+      - ""
+      - "&6Sản phẩm: &f25x Iron Ingot"
+      - ""
+      - "&6Thời gian còn lại: &f%luckperms_inherited_group_expiry_time_factoriesironingot%"
     priority: 1
     view_requirement:
       minimum_requirements: 2
@@ -34,7 +32,7 @@ items:
           type: "has permission"
           permission: factory.ironingot.ongoing.1
 
-  'factories_1_completed':
+  "factories_1_completed":
     material: PAPER
     model_data: 11064
     slot: 21
@@ -42,13 +40,13 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    display_name: "&a&lSẢN XUẤT HOÀN TẤT"
     lore:
-      - ''
-      - '&7The production is completed,'
-      - '&7please claim your product.'
-      - ''
-      - '&e➥ Left-Click to claim'
+      - ""
+      - "&7Sản xuất đã hoàn tất,"
+      - "&7vui lòng nhận sản phẩm."
+      - ""
+      - "&e➥ Nhấp trái để nhận"
     priority: 2
     view_requirement:
       minimum_requirements: 2
@@ -64,22 +62,22 @@ items:
       - "[console] factoriespongoing take %player_name% 1"
       - "[console] factoriespcompleted give %player_name% 1"
       - "[console] give %player_name% IRON_INGOT 25"
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã hoàn thành sản xuất này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
 
-  'factories_1_alreadyproducing':
+  "factories_1_alreadyproducing":
     material: BARRIER
     slot: 21
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You already have a production'
-      - '&7ongoing in this factory.'
+      - ""
+      - "&7Bạn đã có một sản xuất"
+      - "&7đang diễn ra trong nhà máy này."
     priority: 3
     view_requirement:
       minimum_requirements: 1
@@ -93,53 +91,53 @@ items:
           permission: factory.ironingot.started.3
           optional: true
 
-  'factories_1_productionlimit':
+  "factories_1_productionlimit":
     material: BARRIER
     slot: 21
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You have reached your limit for'
-      - '&7ongoing productions. Wait till one'
-      - '&7of your productions is completed.'
-      - ''
-      - '&cYour Limit: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%'
+      - ""
+      - "&7Bạn đã đạt giới hạn"
+      - "&7sản xuất đang diễn ra. Chờ đến khi"
+      - "&7một sản xuất hoàn tất."
+      - ""
+      - "&cGiới hạn của bạn: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%"
     priority: 4
     view_requirement:
       minimum_requirements: 1
       requirements:
         one:
           type: javascript
-          expression: '%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1'
+          expression: "%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1"
 
-  'factories_1_start':
+  "factories_1_start":
     material: IRON_INGOT
     slot: 21
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lɪʀᴏɴ ɪɴɢᴏᴛ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪ'
+    display_name: "&6&lSẢN XUẤT IRON INGOT I"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f25x Iron Ingot'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f10x Raw Iron'
-      - ' &8&l∙ &f5x Oil'
-      - ''
-      - '&6Fuel Level: &eOil &7(2)'
-      - ''
-      - '&6Production Time: &715m'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f25x Iron Ingot"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&l∙ &f10x Raw Iron"
+      - " &8&l∙ &f5x Oil"
+      - ""
+      - "&6Mức nhiên liệu: &eOil &7(2)"
+      - ""
+      - "&6Thời gian sản xuất: &715 phút"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 5
     view_requirement:
       minimum_requirements: 2
@@ -157,7 +155,7 @@ items:
       - "[console] factoriespongoing give %player_name% 1"
       - "[console] minecraft:clear %player_name% raw_iron 10"
       - '[console] minecraft:clear %player_name% paper[custom_name=''["",{"text":"Oil","italic":false,"color":"yellow"}]'',custom_model_data=11067] 5'
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã bắt đầu sản xuất!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -172,21 +170,7 @@ items:
           amount: 5
           modeldata: 11067
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  'factories_2_purchase':
+  "factories_2_purchase":
     material: PAPER
     model_data: 11065
     slot: 22
@@ -194,23 +178,23 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lɪʀᴏɴ ɪɴɢᴏᴛ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪ'
+    display_name: "&6&lSẢN XUẤT IRON INGOT II"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f50x Iron Ingot'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f20x Raw Iron'
-      - ' &8&l∙ &f10x Oil'
-      - ''
-      - '&6Production Time: &720m'
-      - ''
-      - '&#D85300Purchase Price: &f$450,000'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f50x Iron Ingot"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&l∙ &f20x Raw Iron"
+      - " &8&l∙ &f10x Oil"
+      - ""
+      - "&6Thời gian sản xuất: &720 phút"
+      - ""
+      - "&#D85300Giá mua: &f$450,000"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 1
     view_requirement:
       requirements:
@@ -220,7 +204,7 @@ items:
     click_commands:
       - "[console] lp user %player_name% permission set factory.purchased.ironingot.2"
       - "[console] eco take %player_name% 450000"
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory tier!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã mua cấp nhà máy này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -229,35 +213,35 @@ items:
           type: "has permission"
           permission: factory.research.completed.AccountingI
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn chưa có nghiên cứu cần thiết!"
         permission2:
           type: "!has permission"
           permission: factory.research.ongoing.AccountingI
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn chưa có nghiên cứu cần thiết!"
         money:
           type: has money
           amount: 450000
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn không đủ tiền!"
 
-  'factories_2_ongoing':
+  "factories_2_ongoing":
     material: IRON_INGOT
     slot: 22
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    display_name: "&6&lĐANG SẢN XUẤT"
     lore:
-      - ''
-      - '&7Your products are currently'
-      - '&7being produces. Return when'
-      - '&7the production is completed.'
-      - ''
-      - '&6Production: &f50x Iron Ingot'
-      - ''
-      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factoriesironingot%'
+      - ""
+      - "&7Sản phẩm của bạn đang"
+      - "&7được sản xuất. Quay lại khi"
+      - "&7sản xuất hoàn tất."
+      - ""
+      - "&6Sản phẩm: &f50x Iron Ingot"
+      - ""
+      - "&6Thời gian còn lại: &f%luckperms_inherited_group_expiry_time_factoriesironingot%"
     priority: 2
     view_requirement:
       minimum_requirements: 2
@@ -269,7 +253,7 @@ items:
           type: "has permission"
           permission: factory.ironingot.ongoing.2
 
-  'factories_2_completed':
+  "factories_2_completed":
     material: PAPER
     model_data: 11064
     slot: 22
@@ -277,13 +261,13 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    display_name: "&a&lSẢN XUẤT HOÀN TẤT"
     lore:
-      - ''
-      - '&7The production is completed,'
-      - '&7please claim your product.'
-      - ''
-      - '&e➥ Left-Click to claim'
+      - ""
+      - "&7Sản xuất đã hoàn tất,"
+      - "&7vui lòng nhận sản phẩm."
+      - ""
+      - "&e➥ Nhấp trái để nhận"
     priority: 3
     view_requirement:
       minimum_requirements: 2
@@ -299,22 +283,22 @@ items:
       - "[console] factoriespongoing take %player_name% 1"
       - "[console] factoriespcompleted give %player_name% 1"
       - "[console] give %player_name% IRON_INGOT 50"
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã hoàn thành sản xuất này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
 
-  'factories_2_alreadyproducing':
+  "factories_2_alreadyproducing":
     material: BARRIER
     slot: 22
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You already have a production'
-      - '&7ongoing in this factory.'
+      - ""
+      - "&7Bạn đã có một sản xuất"
+      - "&7đang diễn ra trong nhà máy này."
     priority: 4
     view_requirement:
       minimum_requirements: 1
@@ -328,53 +312,53 @@ items:
           permission: factory.ironingot.started.3
           optional: true
 
-  'factories_2_productionlimit':
+  "factories_2_productionlimit":
     material: BARRIER
     slot: 22
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You have reached your limit for'
-      - '&7ongoing productions. Wait till one'
-      - '&7of your productions is completed.'
-      - ''
-      - '&cYour Limit: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%'
+      - ""
+      - "&7Bạn đã đạt giới hạn"
+      - "&7sản xuất đang diễn ra. Chờ đến khi"
+      - "&7một sản xuất hoàn tất."
+      - ""
+      - "&cGiới hạn của bạn: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%"
     priority: 5
     view_requirement:
       minimum_requirements: 1
       requirements:
         one:
           type: javascript
-          expression: '%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1'
+          expression: "%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1"
 
-  'factories_2_start':
+  "factories_2_start":
     material: IRON_INGOT
     slot: 22
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lɪʀᴏɴ ɪɴɢᴏᴛ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪ'
+    display_name: "&6&lSẢN XUẤT IRON INGOT II"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f50x Iron Ingot'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f20x Raw Iron'
-      - ' &8&l∙ &f10x Oil'
-      - ''
-      - '&6Fuel Level: &eOil &7(2)'
-      - ''
-      - '&6Production Time: &720m'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f50x Iron Ingot"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&l∙ &f20x Raw Iron"
+      - " &8&l∙ &f10x Oil"
+      - ""
+      - "&6Mức nhiên liệu: &eOil &7(2)"
+      - ""
+      - "&6Thời gian sản xuất: &720 phút"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 6
     view_requirement:
       minimum_requirements: 2
@@ -392,7 +376,7 @@ items:
       - "[console] factoriespongoing give %player_name% 1"
       - "[console] minecraft:clear %player_name% raw_iron 20"
       - '[console] minecraft:clear %player_name% paper[custom_name=''["",{"text":"Oil","italic":false,"color":"yellow"}]'',custom_model_data=11067] 10'
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã bắt đầu sản xuất!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -407,22 +391,7 @@ items:
           amount: 10
           modeldata: 11067
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  'factories_3_purchase':
+  "factories_3_purchase":
     material: PAPER
     model_data: 11065
     slot: 23
@@ -430,23 +399,23 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lɪʀᴏɴ ɪɴɢᴏᴛ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪɪ'
+    display_name: "&6&lSẢN XUẤT IRON INGOT III"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f100x Iron Ingot'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f40x Raw Iron'
-      - ' &8&l∙ &f15x Oil'
-      - ''
-      - '&6Production Time: &730m'
-      - ''
-      - '&#D85300Purchase Price: &f$1,350,000'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f100x Iron Ingot"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&l∙ &f40x Raw Iron"
+      - " &8&l∙ &f15x Oil"
+      - ""
+      - "&6Thời gian sản xuất: &730 phút"
+      - ""
+      - "&#D85300Giá mua: &f$1,350,000"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 1
     view_requirement:
       requirements:
@@ -456,7 +425,7 @@ items:
     click_commands:
       - "[console] lp user %player_name% permission set factory.purchased.ironingot.3"
       - "[console] eco take %player_name% 1350000"
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have purchased this factory tier!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã mua cấp nhà máy này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -465,35 +434,35 @@ items:
           type: "has permission"
           permission: factory.research.completed.AccountingII
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn chưa có nghiên cứu cần thiết!"
         permission2:
           type: "!has permission"
           permission: factory.research.ongoing.AccountingII
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have the required research!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn chưa có nghiên cứu cần thiết!"
         money:
           type: has money
           amount: 1350000
           deny_commands:
-          - "[message] &8[&6&l!&8] &6&lFactories &8→ &cYou dont have enough money!"
+            - "[message] &8[&6&l!&8] &6&lFactories &8→ &cBạn không đủ tiền!"
 
-  'factories_3_ongoing':
+  "factories_3_ongoing":
     material: IRON_INGOT
     slot: 23
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴏɴɢᴏɪɴɢ'
+    display_name: "&6&lĐANG SẢN XUẤT"
     lore:
-      - ''
-      - '&7Your products are currently'
-      - '&7being produces. Return when'
-      - '&7the production is completed.'
-      - ''
-      - '&6Production: &f100x Iron Ingot'
-      - ''
-      - '&6Time Left: &f%luckperms_inherited_group_expiry_time_factoriesironingot%'
+      - ""
+      - "&7Sản phẩm của bạn đang"
+      - "&7được sản xuất. Quay lại khi"
+      - "&7sản xuất hoàn tất."
+      - ""
+      - "&6Sản phẩm: &f100x Iron Ingot"
+      - ""
+      - "&6Thời gian còn lại: &f%luckperms_inherited_group_expiry_time_factoriesironingot%"
     priority: 2
     view_requirement:
       minimum_requirements: 2
@@ -505,7 +474,7 @@ items:
           type: "has permission"
           permission: factory.ironingot.ongoing.3
 
-  'factories_3_completed':
+  "factories_3_completed":
     material: PAPER
     model_data: 11064
     slot: 23
@@ -513,13 +482,13 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&a&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ᴄᴏᴍᴘʟᴇᴛᴇᴅ'
+    display_name: "&a&lSẢN XUẤT HOÀN TẤT"
     lore:
-      - ''
-      - '&7The production is completed,'
-      - '&7please claim your product.'
-      - ''
-      - '&e➥ Left-Click to claim'
+      - ""
+      - "&7Sản xuất đã hoàn tất,"
+      - "&7vui lòng nhận sản phẩm."
+      - ""
+      - "&e➥ Nhấp trái để nhận"
     priority: 3
     view_requirement:
       minimum_requirements: 2
@@ -535,22 +504,22 @@ items:
       - "[console] factoriespongoing take %player_name% 1"
       - "[console] factoriespcompleted give %player_name% 1"
       - "[console] give %player_name% IRON_INGOT 100"
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have completed this production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã hoàn thành sản xuất này!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
 
-  'factories_3_alreadyproducing':
+  "factories_3_alreadyproducing":
     material: BARRIER
     slot: 23
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You already have a production'
-      - '&7ongoing in this factory.'
+      - ""
+      - "&7Bạn đã có một sản xuất"
+      - "&7đang diễn ra trong nhà máy này."
     priority: 4
     view_requirement:
       minimum_requirements: 1
@@ -564,53 +533,53 @@ items:
           permission: factory.ironingot.started.2
           optional: true
 
-  'factories_3_productionlimit':
+  "factories_3_productionlimit":
     material: BARRIER
     slot: 23
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lᴘʀᴏᴅᴜᴄᴛɪᴏɴ ʟɪᴍɪᴛ'
+    display_name: "&c&lGIỚI HẠN SẢN XUẤT"
     lore:
-      - ''
-      - '&7You have reached your limit for'
-      - '&7ongoing productions. Wait till one'
-      - '&7of your productions is completed.'
-      - ''
-      - '&cYour Limit: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%'
+      - ""
+      - "&7Bạn đã đạt giới hạn"
+      - "&7sản xuất đang diễn ra. Chờ đến khi"
+      - "&7một sản xuất hoàn tất."
+      - ""
+      - "&cGiới hạn của bạn: &f%coinsengine_balance_rounded_factoriespongoing%/%coinsengine_balance_rounded_factoriesplimit%"
     priority: 5
     view_requirement:
       minimum_requirements: 1
       requirements:
         one:
           type: javascript
-          expression: '%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1'
+          expression: "%math_{coinsengine_balance_rounded_factoriesplimit}-{coinsengine_balance_rounded_factoriespongoing}% < 1"
 
-  'factories_3_start':
+  "factories_3_start":
     material: IRON_INGOT
     slot: 23
     update: true
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&6&lɪʀᴏɴ ɪɴɢᴏᴛ ᴘʀᴏᴅᴜᴄᴛɪᴏɴ ɪɪɪ'
+    display_name: "&6&lSẢN XUẤT IRON INGOT III"
     lore:
-      - ''
-      - '&7Start the production by delivering'
-      - '&7the required resources and fuel.'
-      - ''
-      - '&6Production: &f100x Iron Ingot'
-      - ''
-      - '&6Required Resources:'
-      - ' &8&l∙ &f40x Raw Iron'
-      - ' &8&l∙ &f15x Oil'
-      - ''
-      - '&6Fuel Level: &eOil &7(2)'
-      - ''
-      - '&6Production Time: &730m'
-      - ''
-      - '&e➥ Left-Click to start'
+      - ""
+      - "&7Bắt đầu sản xuất bằng cách"
+      - "&7cung cấp tài nguyên và nhiên liệu."
+      - ""
+      - "&6Sản phẩm: &f100x Iron Ingot"
+      - ""
+      - "&6Tài nguyên cần:"
+      - " &8&l∙ &f40x Raw Iron"
+      - " &8&l∙ &f15x Oil"
+      - ""
+      - "&6Mức nhiên liệu: &eOil &7(2)"
+      - ""
+      - "&6Thời gian sản xuất: &730 phút"
+      - ""
+      - "&e➥ Nhấp trái để bắt đầu"
     priority: 6
     view_requirement:
       minimum_requirements: 2
@@ -628,7 +597,7 @@ items:
       - "[console] factoriespongoing give %player_name% 1"
       - "[console] minecraft:clear %player_name% raw_iron 40"
       - '[console] minecraft:clear %player_name% paper[custom_name=''["",{"text":"Oil","italic":false,"color":"yellow"}]'',custom_model_data=11067] 15'
-      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aYou have started a production!"
+      - "[message] &8[&6&l!&8] &6&lFactories &8→ &aBạn đã bắt đầu sản xuất!"
       - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
       - "[refresh]"
     click_requirement:
@@ -643,36 +612,7 @@ items:
           amount: 15
           modeldata: 11067
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  'back':
+  "back":
     material: PAPER
     model_data: 110007
     slots:
@@ -683,6 +623,6 @@ items:
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
-    display_name: '&c&lʙᴀᴄᴋ'
+    display_name: "&c&lQUAY LẠI"
     click_commands:
       - "[openguimenu] factories_menu_ironingot"

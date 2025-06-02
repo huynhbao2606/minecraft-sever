@@ -1,141 +1,118 @@
-menu_title: '&f七七七七七七七七ㅥ'
+menu_title: "&f七七七七七七七七ㅥ"
 open_command: cosmeticshats1
 size: 54
 update_interval: 1
 
 items:
-
-
-
-  'clear_all_cosmetics':
+  "clear_all_cosmetics":
     material: REDSTONE
     slot: 0
     update: true
-    display_name: '&6&lᴄʟᴇᴀʀ ᴀʟʟ ᴄᴏsᴍᴇᴛɪᴄs'
+    display_name: "&6&lᴄʟᴇᴀʀ ᴀʟʟ ᴄᴏsᴍᴇᴛɪᴄs"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - ''
-      - '&7Clear all your cosmetics'
-      - ''
-      - '&e➥ Left-Click to clear'
+      - ""
+      - "&7Xóa tất cả cosmetics của bạn"
+      - ""
+      - "&e➥ Click trái để xóa"
     left_click_commands:
       - "[console] eglow:eglow set %player_name% none"
       - "[console] ultracosmetics clear %player_name%"
-      - "[message] &8[&6&l!&8] &6&lCosmetics &8→ &7You have cleared all your cosmetics!"
+      - "[message] &8[&6&l!&8] &6&lCosmetics &8→ &7Bạn đã xóa tất cả cosmetics!"
 
-
-
-
-
-
-
-
-  'cosmetics_pets':
+  "cosmetics_pets":
     material: WOLF_SPAWN_EGG
     slot: 2
     update: true
-    display_name: '&a&lPets'
+    display_name: "&a&lPets"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&7Cosmetics Category'
-      - ''
-      - '&e➥ Left-Click to open'
+      - "&7Danh mục Cosmetics"
+      - ""
+      - "&e➥ Click trái để mở"
     left_click_commands:
       - "[openguimenu] cosmetics_pets_1"
 
-  'cosmetics_hats':
+  "cosmetics_hats":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgyNTYzODQwMDIxNGRmYzljMWY3NjU5MTBlYmMwZTIyN2YyY2JkOTg0MzYzZGFhMzkyMDQwYmNlYjdkZWRjMiJ9fX0=
     slot: 3
     update: true
-    display_name: '&e&lHats'
+    display_name: "&e&lHats"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&7Cosmetics Category'
-      - ''
-      - '&e➥ Left-Click to open'
+      - "&7Danh mục Cosmetics"
+      - ""
+      - "&e➥ Click trái để mở"
     left_click_commands:
       - "[openguimenu] cosmetics_hats_1"
 
-  'cosmetics_particles':
+  "cosmetics_particles":
     material: BLAZE_POWDER
     slot: 4
     update: true
-    display_name: '&b&lParticles'
+    display_name: "&b&lParticles"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&7Cosmetics Category'
-      - ''
-      - '&e➥ Left-Click to open'
+      - "&7Danh mục Cosmetics"
+      - ""
+      - "&e➥ Click trái để mở"
     left_click_commands:
       - "[openguimenu] cosmetics_particles_1"
 
-  'cosmetics_projectileeffects':
+  "cosmetics_projectileeffects":
     material: ARROW
     slot: 5
     update: true
-    display_name: '&6&lProjectile Effects'
+    display_name: "&6&lProjectile Effects"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&7Cosmetics Category'
-      - ''
-      - '&e➥ Left-Click to open'
+      - "&7Danh mục Cosmetics"
+      - ""
+      - "&e➥ Click trái để mở"
     left_click_commands:
       - "[openguimenu] cosmetics_projectileeffects_1"
 
-  'cosmetics_deatheffects':
+  "cosmetics_deatheffects":
     material: IRON_SWORD
     slot: 6
     update: true
-    display_name: '&c&lDeath Effects'
+    display_name: "&c&lDeath Effects"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&7Cosmetics Category'
-      - ''
-      - '&e➥ Left-Click to open'
+      - "&7Danh mục Cosmetics"
+      - ""
+      - "&e➥ Click trái để mở"
     left_click_commands:
       - "[openguimenu] cosmetics_deatheffects_1"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  'locked_Astronaut':
+  "locked_Astronaut":
     material: BARRIER
     amount: 1
     slot: 19
     update: true
-    display_name: '&e&lAstronaut'
+    display_name: "&e&lAstronaut"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -143,44 +120,41 @@ items:
           permission: ultracosmetics.hats.Astronaut
     priority: 1
 
-  'toggle_Astronaut':
+  "toggle_Astronaut":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2U4YWFkNjczMTU3YzkyMzE3YTg4YjFmODZmNTI3MWYxY2Q3Mzk3ZDdmYzhlYzMyODFmNzMzZjc1MTYzNCJ9fX0=
     amount: 1
     slot: 19
     update: true
-    display_name: '&e&lAstronaut'
+    display_name: "&e&lAstronaut"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Astronaut"
     priority: 2
 
-
-
-
-  'locked_Scared':
+  "locked_Scared":
     material: BARRIER
     amount: 1
     slot: 20
     update: true
-    display_name: '&e&lScared'
+    display_name: "&e&lScared"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -188,44 +162,41 @@ items:
           permission: ultracosmetics.hats.Scared
     priority: 1
 
-  'toggle_Scared':
+  "toggle_Scared":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjM2ZTI2YzQ0NjU5ZTgxNDhlZDU4YWE3OWU0ZDYwZGI1OTVmNDI2NDQyMTE2ZjgxYjU0MTVjMjQ0NmVkOCJ9fX0=
     amount: 1
     slot: 20
     update: true
-    display_name: '&e&lScared'
+    display_name: "&e&lScared"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Scared"
     priority: 2
 
-
-
-
-  'locked_Sad':
+  "locked_Sad":
     material: BARRIER
     amount: 1
     slot: 21
     update: true
-    display_name: '&e&lSad'
+    display_name: "&e&lSad"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -233,45 +204,41 @@ items:
           permission: ultracosmetics.hats.Sad
     priority: 1
 
-  'toggle_Sad':
+  "toggle_Sad":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ5NjhhYzVhZjMxNDY4MjZmYTJiMGQ0ZGQxMTRmZGExOTdmOGIyOGY0NzUwNTUzZjNmODg4MzZhMjFmYWM5In19fQ==
     amount: 1
     slot: 21
     update: true
-    display_name: '&e&lSad'
+    display_name: "&e&lSad"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Sad"
     priority: 2
 
-
-
-
-
-  'locked_Cool':
+  "locked_Cool":
     material: BARRIER
     amount: 1
     slot: 22
     update: true
-    display_name: '&e&lCool'
+    display_name: "&e&lCool"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -279,45 +246,41 @@ items:
           permission: ultracosmetics.hats.Cool
     priority: 1
 
-  'toggle_Cool':
+  "toggle_Cool":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY4ZjRjZWY5NDlmMzJlMzNlYzVhZTg0NWY5YzU2OTgzY2JlMTMzNzVhNGRlYzQ2ZTViYmZiN2RjYjYifX19
     amount: 1
     slot: 22
     update: true
-    display_name: '&e&lCool'
+    display_name: "&e&lCool"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Cool"
     priority: 2
 
-
-
-
-
-  'locked_Wink':
+  "locked_Wink":
     material: BARRIER
     amount: 1
     slot: 23
     update: true
-    display_name: '&e&lWink'
+    display_name: "&e&lWink"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -325,45 +288,41 @@ items:
           permission: ultracosmetics.hats.Wink
     priority: 1
 
-  'toggle_Wink':
+  "toggle_Wink":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRlYTJkNmY5MzlmZWZlZmY1ZDEyMmU2M2RkMjZmYThhNDI3ZGY5MGIyOTI4YmMxZmE4OWE4MjUyYTdlIn19fQ==
     amount: 1
     slot: 23
     update: true
-    display_name: '&e&lWink'
+    display_name: "&e&lWink"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Wink"
     priority: 2
 
-
-
-
-
-  'locked_Diamond':
+  "locked_Diamond":
     material: BARRIER
     amount: 1
     slot: 24
     update: true
-    display_name: '&e&lDiamond'
+    display_name: "&e&lDiamond"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -371,45 +330,41 @@ items:
           permission: ultracosmetics.hats.Diamond
     priority: 1
 
-  'toggle_Diamond':
+  "toggle_Diamond":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTYzMTU5N2RjZTRlNDA1MWU4ZDVhNTQzNjQxOTY2YWI1NGZiZjI1YTBlZDYwNDdmMTFlNjE0MGQ4OGJmNDhmIn19fQ==
     amount: 1
     slot: 24
     update: true
-    display_name: '&e&lDiamond'
+    display_name: "&e&lDiamond"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Diamond"
     priority: 2
 
-
-
-
-
-  'locked_Chicken':
+  "locked_Chicken":
     material: BARRIER
     amount: 1
     slot: 25
     update: true
-    display_name: '&e&lChicken'
+    display_name: "&e&lChicken"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -417,45 +372,41 @@ items:
           permission: ultracosmetics.hats.Chicken
     priority: 1
 
-  'toggle_Chicken':
+  "toggle_Chicken":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2EzNTgyY2U0ODg5MzMzZGFkMzI5ZTRlMjQzNzJhMDNhNWRhYTJjMzQyODBjNTYyNTZhZjUyODNlZGIwNDNmOCJ9fX0=
     amount: 1
     slot: 25
     update: true
-    display_name: '&e&lChicken'
+    display_name: "&e&lChicken"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Chicken"
     priority: 2
 
-
-
-
-
-  'locked_Cow':
+  "locked_Cow":
     material: BARRIER
     amount: 1
     slot: 28
     update: true
-    display_name: '&e&lCow'
+    display_name: "&e&lCow"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -463,45 +414,41 @@ items:
           permission: ultracosmetics.hats.Cow
     priority: 1
 
-  'toggle_Cow':
+  "toggle_Cow":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY2N2MwZTEwN2JlNzlkNzY3OWJmZTg5YmJjNTdjNmJmMTk4ZWNiNTI5YTMyOTVmY2ZkZmQyZjI0NDA4ZGNhMyJ9fX0=
     amount: 1
     slot: 28
     update: true
-    display_name: '&e&lCow'
+    display_name: "&e&lCow"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Cow"
     priority: 2
 
-
-
-
-
-  'locked_Golem':
+  "locked_Golem":
     material: BARRIER
     amount: 1
     slot: 29
     update: true
-    display_name: '&e&lGolem'
+    display_name: "&e&lGolem"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -509,45 +456,41 @@ items:
           permission: ultracosmetics.hats.Golem
     priority: 1
 
-  'toggle_Golem':
+  "toggle_Golem":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDI3MTkxM2EzZmM4ZjU2YmRmNmI5MGE0YjRlZDZhMDVjNTYyY2UwMDc2YjUzNDRkNDQ0ZmIyYjA0MGFlNTdkIn19fQ==
     amount: 1
     slot: 29
     update: true
-    display_name: '&e&lGolem'
+    display_name: "&e&lGolem"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Golem"
     priority: 2
 
-
-
-
-
-  'locked_Enderman':
+  "locked_Enderman":
     material: BARRIER
     amount: 1
     slot: 30
     update: true
-    display_name: '&e&lEnderman'
+    display_name: "&e&lEnderman"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -555,45 +498,41 @@ items:
           permission: ultracosmetics.hats.Enderman
     priority: 1
 
-  'toggle_Enderman':
+  "toggle_Enderman":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE0NDM4OGViMjU1ZWZmMWE2NDZmZmFhMmY4YWUxZWU4Nzk5MGFkZjk0YjI3MTEwZWI1NWNmMDRlMGU4YzM1NyJ9fX0=
     amount: 1
     slot: 30
     update: true
-    display_name: '&e&lEnderman'
+    display_name: "&e&lEnderman"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Enderman"
     priority: 2
 
-
-
-
-
-  'locked_Creeper':
+  "locked_Creeper":
     material: BARRIER
     amount: 1
     slot: 31
     update: true
-    display_name: '&e&lCreeper'
+    display_name: "&e&lCreeper"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -601,45 +540,41 @@ items:
           permission: ultracosmetics.hats.Creeper
     priority: 1
 
-  'toggle_Creeper':
+  "toggle_Creeper":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTYzYmYzMTM3YjM3ZmYxNWRjYTkyNGY2ODFkZDc4YTQ5NWQ4YTMwYTg2MTQwZmVjNjZkNGZhZGRlNTc3ZTQzYiJ9fX0=
     amount: 1
     slot: 31
     update: true
-    display_name: '&e&lCreeper'
+    display_name: "&e&lCreeper"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Creeper"
     priority: 2
 
-
-
-
-
-  'locked_Blaze':
+  "locked_Blaze":
     material: BARRIER
     amount: 1
     slot: 32
     update: true
-    display_name: '&e&lBlaze'
+    display_name: "&e&lBlaze"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -647,45 +582,41 @@ items:
           permission: ultracosmetics.hats.Blaze
     priority: 1
 
-  'toggle_Blaze':
+  "toggle_Blaze":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0=
     amount: 1
     slot: 32
     update: true
-    display_name: '&e&lBlaze'
+    display_name: "&e&lBlaze"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Blaze"
     priority: 2
 
-
-
-
-
-  'locked_Turtle':
+  "locked_Turtle":
     material: BARRIER
     amount: 1
     slot: 33
     update: true
-    display_name: '&e&lTurtle'
+    display_name: "&e&lTurtle"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -693,45 +624,41 @@ items:
           permission: ultracosmetics.hats.Turtle
     priority: 1
 
-  'toggle_Turtle':
+  "toggle_Turtle":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGE0MDUwZTdhYWNjNDUzOTIwMjY1OGZkYzMzOWRkMTgyZDdlMzIyZjlmYmNjNGQ1Zjk5YjU3MThhIn19fQ==
     amount: 1
     slot: 33
     update: true
-    display_name: '&e&lTurtle'
+    display_name: "&e&lTurtle"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Turtle"
     priority: 2
 
-
-
-
-
-  'locked_Mario':
+  "locked_Mario":
     material: BARRIER
     amount: 1
     slot: 34
     update: true
-    display_name: '&e&lMario'
+    display_name: "&e&lMario"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -739,45 +666,41 @@ items:
           permission: ultracosmetics.hats.Mario
     priority: 1
 
-  'toggle_Mario':
+  "toggle_Mario":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBjMjU0OWE4OTM3MjY5ODhmMzQyOGJlZjc5OTg3NWJhODcxNjg4YWU2NGViMGNmZGM0M2Y3ZDZlMjRjNmMifX19
     amount: 1
     slot: 34
     update: true
-    display_name: '&e&lMario'
+    display_name: "&e&lMario"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Mario"
     priority: 2
 
-
-
-
-
-  'locked_Batman':
+  "locked_Batman":
     material: BARRIER
     amount: 1
     slot: 37
     update: true
-    display_name: '&e&lBatman'
+    display_name: "&e&lBatman"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -785,45 +708,41 @@ items:
           permission: ultracosmetics.hats.Batman
     priority: 1
 
-  'toggle_Batman':
+  "toggle_Batman":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2NmY2Y0Mzk2ODE0NzUxNDY1ODk0MzM4ZWUyZGNhYTA2YTI5ODJkOWRiZTg2MTM1Y2JmYmE5NTY3ODYzOGYifX19
     amount: 1
     slot: 37
     update: true
-    display_name: '&e&lBatman'
+    display_name: "&e&lBatman"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Batman"
     priority: 2
 
-
-
-
-
-  'locked_Chest':
+  "locked_Chest":
     material: BARRIER
     amount: 1
     slot: 38
     update: true
-    display_name: '&e&lChest'
+    display_name: "&e&lChest"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -831,45 +750,41 @@ items:
           permission: ultracosmetics.hats.Chest
     priority: 1
 
-  'toggle_Chest':
+  "toggle_Chest":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19
     amount: 1
     slot: 38
     update: true
-    display_name: '&e&lChest'
+    display_name: "&e&lChest"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Chest"
     priority: 2
 
-
-
-
-
-  'locked_Ghost':
+  "locked_Ghost":
     material: BARRIER
     amount: 1
     slot: 39
     update: true
-    display_name: '&e&lGhost'
+    display_name: "&e&lGhost"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -877,45 +792,41 @@ items:
           permission: ultracosmetics.hats.Ghost
     priority: 1
 
-  'toggle_Ghost':
+  "toggle_Ghost":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhkMjE4MzY0MDIxOGFiMzMwYWM1NmQyYWFiN2UyOWE5NzkwYTU0NWY2OTE2MTllMzg1NzhlYTRhNjlhZTBiNiJ9fX0=
     amount: 1
     slot: 39
     update: true
-    display_name: '&e&lGhost'
+    display_name: "&e&lGhost"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Ghost"
     priority: 2
 
-
-
-
-
-  'locked_Santa':
+  "locked_Santa":
     material: BARRIER
     amount: 1
     slot: 40
     update: true
-    display_name: '&e&lSanta'
+    display_name: "&e&lSanta"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Unlock this cosmetic'
-      - '&7in the coinshop!'
-      - ''
-      - '&c&nLocked'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Mở khóa cosmetic này"
+      - "&7trong coinshop!"
+      - ""
+      - "&c&nĐã khóa"
     view_requirement:
       requirements:
         permission:
@@ -923,28 +834,21 @@ items:
           permission: ultracosmetics.hats.Santa
     priority: 1
 
-  'toggle_Santa':
+  "toggle_Santa":
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Q2YjMyYTk0MTJmYzEyYmY0NThmMTQzNjhiMTk2OWMwYmM5MTNkMzAyN2ZiNjZlMTFhNGJhZjI4Mzk4YWQifX19
     amount: 1
     slot: 40
     update: true
-    display_name: '&e&lSanta'
+    display_name: "&e&lSanta"
     item_flags:
       - HIDE_ATTRIBUTES
       - HIDE_ENCHANTS
     lore:
-      - '&8Cosmetic Item'
-      - ''
-      - '&7Toggle this cosmetic!'
-      - ''
-      - '&e➥ Left-Click to toggle'
+      - "&8Cosmetic Item"
+      - ""
+      - "&7Bật/tắt cosmetic này!"
+      - ""
+      - "&e➥ Click trái để bật/tắt"
     click_commands:
       - "[player] ultracosmetics toggle hats Santa"
     priority: 2
-
-
-
-
-
-
-
